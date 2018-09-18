@@ -1,0 +1,236 @@
+\documentclass{article}
+
+\author{Manuel Hinz}
+
+\title{Tagesdokumentation}
+
+\begin{document}
+
+\maketitle
+
+\section{Vor B\"{o}nner}
+
+\subsection{Probleme}
+
+\begin{itemize}
+
+\item Keine Pc Zugangsdaten
+
+\item Pi und Sensoren nicht testbar, weil Surface kein ethernetport hat.
+
+\end{itemize}
+
+\subsection{Fragen/Antworten}
+
+\begin{itemize}
+
+\item D\"{u}rfen wir Pi an dem bildschirm und der Tastatur / Maus anschliessen ?  
+
+\item Keine Weitere
+
+\end{itemize}
+
+\subsection{Tests}
+
+Alle Motoren laufen Vorwärts und Rückwerts.
+
+\subsection{Gemessene Werte}
+
+\subsubsection{Motor 1}
+
+\paragraph{Strom}
+
+\begin{itemize}
+
+\item $125 mA$ Leerlauf
+
+\item $202 mA$ Max last
+
+\end{itemize}
+
+\paragraph{Spannung}
+
+\subsubsection{Motor 2}
+
+\paragraph{Strom}
+
+\begin{itemize}
+
+\item $149 mA$ Leerlauf
+
+\item $203 mA$ Max last
+
+\end{itemize}
+
+\paragraph{Spannung}
+
+
+\paragraph{Strom}
+
+\begin{itemize}
+
+\item $125 mA$ Leerlauf
+
+\item $202 mA$ Max last
+
+\end{itemize}
+
+\paragraph{Spannung}
+
+
+\subsubsection{Motor 3}
+\subsubsection{Motor 3}
+
+\paragraph{Strom}
+
+\begin{itemize}
+
+\item $125 mA$ Leerlauf
+
+\item $202 mA$ Max last
+
+\end{itemize}
+
+\paragraph{Spannung}
+
+
+\paragraph{Strom}
+
+\begin{itemize}
+
+\item $125 mA$ Leerlauf
+
+\item $202 mA$ Max last
+
+\end{itemize}
+
+\paragraph{Spannung}
+
+
+
+
+\paragraph{Strom}
+
+\begin{itemize}
+
+\item $123 mA$ Leerlauf
+
+\item $202 mA$ Max last
+
+\end{itemize}
+
+\paragraph{Spannung}
+
+
+\paragraph{Strom}
+
+\begin{itemize}
+
+\item $125 mA$ Leerlauf
+
+\item $202 mA$ Max last
+
+\end{itemize}
+
+\paragraph{Spannung}
+
+
+
+\subsection{Pi}
+
+\begin{itemize}
+
+\item Image auf die SD geflasht(f\"{u}r beide)
+
+\item Grundlegender Funktionalit\"{a}tstest : LED auf dem Pi bliken lassen. 
+
+
+\end{itemize}
+
+\section{Nach Ankunft}
+
+\subsection{Besprechung Dokumentation}
+
+\begin{itemize}
+
+\item Struktur besprochen
+
+\item nicht unter 20 Seiten und andere Regeln (genauer Manuels Notizen vom 5.7.18)
+
+\end{itemize}
+
+\subsection{Fehlende Sachen PI}
+
+\begin{itemize}
+
+\item (micro) SD card min 8 gb --status : Leihgabe von Manuel Hinz
+
+\item Energieversorgung (micro usb) --status : Leihgabe von Manuel Hinz
+
+\end{itemize}
+
+\subsection{Input PWM}
+
+\begin{itemize}
+
+\item PulsWeitenModulation
+
+\item $U_{ein} = $Spannung wenn ein "AN" signal gesendet wird in $[V]$
+
+\item $U_{aus} = $Spannung wenn ein "AUS" signal gesendet wird in $[V]$
+
+\item $T = $Periodendauer in $[s]$
+
+\item $T_{ein} = $ Zeit die $U_{ein}$ anliegt in $[s]$
+
+\item $T_{aus} = $ Zeit die $U_{aus}$ anliegt in $[s]$
+
+\item $U_m = U_{ein} * \frac{T_{ein}}{T}$ Durchschnitliche Spannung in $[V]$, 
+
+angenommen : $U_{aus} = 0V$
+
+\end{itemize}
+
+\subsection{Aufgaben}
+
+\subsubsection{Aufgabe 1} 
+
+Gegeben
+\begin{itemize}
+
+\item $T = 10ms$
+
+\item $U_{ein} = 5V$
+
+\item $U_{aus} = 0V$
+
+\item Efficiency $= 50/75/10 \%$ respectively $(a)/b)/c))$
+
+\end{itemize}
+ 
+Aufgabe : 
+
+Zeitspannungsdiagramm zeichnen und $U_m$ ausrechnen
+
+\subsubsection{Aufgabe 2}
+
+Aufgabe: 
+
+Diagramm gegeben $-> U_m$ herausfinden
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
