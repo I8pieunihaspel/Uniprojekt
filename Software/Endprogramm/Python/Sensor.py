@@ -21,9 +21,9 @@ class LightSensor(Sensor): #Klasse LightSensor erbt von der Klasse Sensor
     def __init__(self,pin_id:int, sensor_id:int): #Konstruktor
         super().__init__(pin_id, sensor_id) # ruft Konstruktor der Klasse von der geerbt wird auf
         self.is_analog = True # jeder Helligkeitssensor gibt automatisch ein analoges Signal.
+        grovepi.pinMode(self.pin_id, "INPUT")#den Pin als Input einstellen
         
     def get_value(self): #implementation von get_value ist für alle Helligkeitssensoren gleich, da alle analoge Signale herrausgeben.
-        grovepi.pinMode(self.pin_id, "INPUT")#den Pin als Input einstellen
         try:
             return grovepi.analogRead(self.pin_id) #den wert der Helligkeit zwischen 0, 1023 auslesen und returnen 
         except IOError:
@@ -35,9 +35,9 @@ class DistanceSensor(Sensor): #Klasse DistanceSensor erbt von der Klasse Sensor
     def __init__(self,pin_id:int, sensor_id:int): #Konstruktor
         super().__init__(pin_id, sensor_id) # ruft Konstruktor der Klasse von der geerbt wird auf
         self.is_analog = False # jeder Abstandssensor gibt automatisch ein digitales Signal.
+        grovepi.pinMode(self.pin_id, "INPUT") #den Pin als Input einstellen
 
     def get_value(self):
-        grovepi.pinMode(self.pin_id, "INPUT") #den Pin als Input einstellen
         try:
             return grovepi.digitalRead(self.pin_id) #den geschätzen Abstand enweder als GPIO.HIGH oder GPIO.LOW aus.
         except IOError:
