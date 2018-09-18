@@ -1,0 +1,228 @@
+\documentclass{article}
+
+\author{Manuel Hinz}
+
+\title{Tagesdokumentation}
+
+\begin{document}
+
+\maketitle
+
+\section{Organisation und Speicherung der Dateien}
+Wir haben heute die Orderstruktur festgelegt in welcher wir alle Dateien speichern wollen. Diese Struktur wird auf Github zu finden sein.
+\subsection{Struktur}
+
+\begin{itemize}
+
+\item Doku : 
+\begin{itemize}
+
+\item Abgabe : Ordner mit Unterordnern der verschiedenen Versionen
+
+\item Quellen : Ordner mit allen Links zu genutzen Quellen 
+
+\item Tagesdokus : Ordner mit einem unterordner zu jedem Tag
+
+\end{itemize}
+
+\item Hardware :
+\begin{itemize}
+
+\item Datenblätter : Ordner mit allen Datenblättern.
+
+\item Messungen : Ordner mit allen Digitalisierten Messungen.
+
+\end{itemize}
+
+\item Software(in jedem Unterordner gibt es einen Ordner pro Sprache) :
+\begin{itemize}
+
+\item Endprogramm : Programm was am Ende auf dem Pi läuft + Klassen die das Hauptprogramm unterstützen.
+
+\item Testen : Ordner in dem Scripte zum Testen von Funktionen liegen.
+
+\end{itemize}
+
+\item Zeitplan : Hier liegt immer der aktuelle Zeitplan + die Anwesenheitsliste für alle Tage
+
+\end{itemize}
+
+\subsection{Github}
+
+\begin{itemize}
+
+\item Repo erstellt. ($https://github.com/I8pieunihaspel/Uniprojekt$)
+
+\item Struktur im Repo erstellt.
+
+\item Alle Tagesdokus + aktuelle Version der Abgabedokumentation hochgeladen.
+
+\item Code für Sensoren hochgeladen.
+
+\end{itemize}
+
+\section{Strecke}
+
+\begin{itemize}
+
+\item Strecke  + Extrateile bekommen
+
+\item Doch keine Folie, daher ist die Farbe Braun.
+
+\end{itemize}
+
+\section{Sensoren}
+
+\subsection{Helligkeitssensoren}
+
+\begin{itemize}
+
+\item Klappt mit geringem Abstand auch für den Unterschied Holz - Tape
+
+\item Im Moment : beste Lösung ist das Umlöten des Anschlusses.
+
+\end{itemize}
+
+\subsection{Abstandssensoren}
+
+\begin{itemize}
+
+\item Funktionieren nur unter dem Tisch.
+
+\item Nur einen Ausprobiert.
+
+\item Lösung liegt vielleicht in der Karosserie, welche den Raum um den Sensor verdunkelt.
+
+\item Alternativ : Umbau der Sensoren oder Verdunklung des Raumes.
+
+\item Umbau der Sensoren detailiert im Abschnitt "Input". 
+
+\end{itemize}
+
+\section{Input}
+
+\subsection{Funktion Infrarot Distanzsensor}
+
+\begin{itemize}
+
+
+\item Infrarot leuchte sendet Licht in eine Richtung.
+
+\item Bauteil reagiert auf Helligkeit
+
+\item Potentiometer als Spannungsteiler um Noise herrauszufiltern. 
+
+\item Stärke des Signals nach Inverse Square Law : intesity $\propto \frac{1}{distance^2}$ 
+
+\end{itemize}
+
+\subsection{Die Fehlerquelle}
+
+\begin{itemize}
+
+\item Zuviel Noise.
+
+\item Einmalige Einstellung des Noiselevels.
+
+\end{itemize}
+
+\subsection{Umbau}
+
+\begin{itemize}
+
+\item Infrarotleuchte ansteuerbar machen.
+
+\item Potentiometer ausbauen und die Spannung direkt vom Pi geben lassen 
+
+\item Funktion : Infrarotleuchte aus $\Rightarrow$ Messung vom Sensor $\Rightarrow$ Infrarotleuchte ab $\Rightarrow$ Messung vom Sensor $\Rightarrow$ Zweite Messung minus der ersten Messung ist ein Schätzwert der Intesität des Lichtes der Leuchte (proportional zum Abstand wie oben beschrieben).
+
+\end{itemize}
+
+\subsection{Probleme}
+
+\begin{itemize}
+
+\item nicht genug Anschlüsse für jede Infrarotleuchte und den Sensor (Umgebar durch Schaltung).
+
+\item Zeitaufwendig 
+
+\item Schwer
+
+\end{itemize}
+
+\section{Auto}
+
+Auto zum fahren gebracht(ohne Ansteuerung vom Pi)
+
+\section{Programmierung}
+
+\begin{itemize}
+
+\item (Abstrakte) Klasse Sensor geplannt und implementiert.
+
+\item Klasse LightSensor geplannt und implementiert.
+
+\item Klasse DistanceSensor geplannt und implentiert.
+
+\item Genannten Code Kommentiert.
+
+\item Aller Code ist noch in einer frühen Version.
+
+\end{itemize}
+
+\section{Quellen}
+
+\begin{itemize}
+
+\item Inverse Square Law : Why does this product equal $\pi$/2? A new proof of the Wallis formula for $\pi$. by 3Blue1Brown on Youtube (Stand 18.09.18)
+
+\item Input von Herrn Meißner (Verständniss von Manuel Hinz)
+
+\end{itemize}
+
+\section{URGENT PROBLEMS}
+
+\begin{itemize}
+
+\item Internet wird immer von Manuel gestellt, geht nun nicht mehr, da Datenmengen immer größer werden, dadruch das quasi das Repo gecloned wird.
+
+\item Potentielle Lösung : Kompletter Umbau des Repo, Andere Lösung für die Internet Verbindung des Pis. 
+
+\end{itemize}
+
+\section{ToDo}
+
+\begin{itemize}
+
+\item Plann des programmes genauer formulieren
+
+\item Terminal Benutzung Dokumentieren
+
+\item Kl\"{a}ren ob mehr Laptops mitgebracht werden sollen.
+
+\item Programm zum checken und verbessern von \LaTeX Dokumenten schreiben.
+
+\item Programm zum Erstellen von Tagesdokus schreiben.
+
+\item Abstandssensor zum Laufen bringen.
+
+\end{itemize}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
