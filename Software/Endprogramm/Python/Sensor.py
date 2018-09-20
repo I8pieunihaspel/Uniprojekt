@@ -39,6 +39,6 @@ class DistanceSensor(Sensor): #Klasse DistanceSensor erbt von der Klasse Sensor
 
     def get_value(self):
         try:
-            return grovepi.digitalRead(self.pin_id) #den geschätzen Abstand enweder als GPIO.HIGH oder GPIO.LOW aus.
+            return grovepi.digitalRead(self.pin_id) #den geschätzen Abstand enweder als GPIO.HIGH(1) oder GPIO.LOW(0) aus. 
         except IOError:
             print("Error")
