@@ -2,9 +2,9 @@ import time
 import grovepi
 class Sensor: #(eigentliche) Abstrakte Klasse, welcher alle Sensoren zugehörig sind 
     def __init__(self,pin_id:int, sensor_id:int): #Konstruktor
-        self.pin_id = pin_id #ID, welche man benutzt um die Sensoren anzusprechen
-        self.sensor_id = sensor_id #interne ID
-        self.is_analog = True #Gibt an ob der Sensor analog oder nicht analog(=digital)
+        self.pin_id: int = pin_id #ID, welche man benutzt um die Sensoren anzusprechen
+        self.sensor_id: int = sensor_id #interne ID
+        self.is_analog: bool = True #Gibt an ob der Sensor analog oder nicht analog(=digital)
         
     @abstractmethod
     def get_value(self): # Methode welche den Wert des Sensors gibt.
