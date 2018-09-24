@@ -19,10 +19,10 @@ def replace(s):
         return s
 
 if __name__ == "__main__":
-    file = io.open("C:\\Info\\Projects\\UniprojektGitHub\\Doku\\Tagesdokus\\10thDay\\TagesDoku.tex", "r", encoding="utf-8")
+    file = io.open("C:\\Info\\Projects\\UniprojektGitHub\\Doku\\Tagesdokus\\11thDay\\TagesDoku.tex", "r", encoding="utf-8")
     data = [replace(c) for line in file for c in line]
     file.close()
-    with io.open("C:\\Info\\Projects\\UniprojektGitHub\\Doku\\Tagesdokus\\10thDay\\TagesDoku.tex", "w+", encoding="utf-8") as f:
+    with io.open("C:\\Info\\Projects\\UniprojektGitHub\\Doku\\Tagesdokus\\11thDay\\TagesDoku.tex", "w+", encoding="utf-8") as f:
         for c in data:
             f.write(c)
 
