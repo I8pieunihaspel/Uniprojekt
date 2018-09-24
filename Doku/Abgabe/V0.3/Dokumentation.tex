@@ -24,6 +24,15 @@ Es gibt viele mögliche Aufgaben, die man im Rahmen des Themas lösen könnte. B
 
 \section{Programmierung}
 
+\subsection{Einleitung}
+Bei der Programmierung des Projekts haben wir einen objektorientierten Lösungsansatz gewählt. Dies haben wir einerseits wegen der Thematisierung der Objekt-Orientierten-Programmierung (OOP) im Informatikunterricht und andererseits wegen dem einfachen Bezug dem man hier zwischen realen Objekten (Sensor, Motor) und zugehörigen Klassen herstellen kann. Außerdem ist die OOP einer der Paradigmen, welche in der Realität benutzt werden. 
+
+\subsection{Python}
+Als Programmiersprache haben wir Python gewählt, da wir diese Sprache im Informatikunterricht verwenden, sie für Laien leicht verständlich ist und wir mehrere Personen in der Gruppe bzw. dem nahen Umfeld haben, welche diese Sprache bereits gut können. Außerdem unterstützt Python die OOP, wodurch die Sprache auch unsere Paradigmenwahl zulässt. Da sie eine beliebte und weitverbreitete Sprache ist unterstützt sowohl das aktuelle Image das wir auf dem Pi haben, als auch der Hersteller unsere Sensoren die Sprache. Auch kann man sagen, dass die Sprachwahl es uns ermöglicht Code, welcher schon früher von einzelnen Mitgliedern geschrieben wurde, wieder zu benutzen.  Ein Nachteil ist hier, dass Python nicht alle Konzepte der OOP unterstützt (zum Beispiel Abstrakte Klassen, Interfaces/Traits).
+
+\subsection{Programmstruktur}
+Jedes große Bauteil bekommt eine Klasse zugewiesen. Die wichtigen Bauteile sind hier: die Sensoren, die Motoren, die Motortreiber und der Raspberrypi. Für die Sensoren haben wir drei Klassen: Einmal eine abstrakte Klasse Sensor, welche definiert, dass jeder Sensor ein Signal auslesen(get\_value) und die Bezeichnung des Pins ausgeben(get\_location) kann. Wir haben dann zwei Klassen, namentlich LightSensor und DistanceSensor, welche von Sensor erben, und jeweils die Methode zum Signalauslesen, sowie den Konstruktor überschreiben.
+
 \section{Elektrotechnik}
 
 \chapter{Praxis}
