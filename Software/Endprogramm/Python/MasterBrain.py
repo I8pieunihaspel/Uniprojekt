@@ -7,4 +7,3 @@ class MasterBrain(object):
         pass
     def einparken(self, seconds:int):
         pass
-    
