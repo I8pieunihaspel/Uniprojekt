@@ -1,0 +1,105 @@
+\documentclass{report}
+
+\usepackage{hyperref}
+
+\author{Manuel Hinz}
+
+\title{Dokumentation des Unipraktikums}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+\chapter{Einleitung}
+
+\section{Motivation}
+Im Moment sind selbstfahrende Autos so ziemlich das technische Thema. Universitäten rund um den Globus forschen an verschiedensten Technologien, welche das selbstfahrende Auto braucht. Ein Autohersteller nach dem anderen kauft entweder Startups zu dem Thema auf, oder investiert in eine eigene Forschungsabteilung. Als sich nun die Möglichkeit eines Praktikums im Rahmen des Elektrotechnikleistungskurses an der Bergischen Universität Wuppertal anbot, fiel die Wahl des Themas leicht. Das dieses Praktikum nicht nur eine gute Möglichkeit ist um den aktuellen Technischen Entwicklungen nachzueifern, zeigt sich schon an den verschiedenen Aufgaben die zu erledigen sind. Im Laufe des Projektes müssen nämlich Motoren mithilfe von H-Brücken und Pulsweitenmodulation gesteuert, ein Programm entworfen und ein Raspberrypi in Betrieb genommen werden. Neben dem technischen Wissen, was erlernt und angewendet werden muss (und sich praktischerweise relativ gut mit dem Abiturstoff deckt), wird hier auch ein Einblick in den Universitätsalltag erlangt.  
+\section{Zielsetzung}
+Es gibt viele mögliche Aufgaben, die man im Rahmen des Themas lösen könnte. Besonders interessant sind hier vor allem das finden von einem und das einparken auf einem Parkplatz, sowie das Teilnehmen am Straßenverkehr. Letzteres entfällt wegen der Schwierigkeit des Simulierens von anderem Verkehr. Deshalb ist die hier gewählte Aufgabe das finden und befahren einer Parklücke in einem straßenähnlichen Setting. Genauer gesagt wird das Auto eine Strecke entlangfahren und mit Hilfe von Sensoren eine Parklücke in die es hineinpasst identifizieren und dann dort einparken. Dies wird innerhalb von 16 90-minütigen Einheiten über einen Zeitraum von sieben Wochen. Ein weiteres Ziel ist es das für die Vollendung des Projektes nötige Wissen für alle Gruppenmitglieder verständlich zu bearbeiten und die Gruppe damit für das Abitur und weitere Projekte vorzubereiten.
+
+\chapter{Theorie}
+
+\section{Ausblick}
+
+\section{Programmierung}
+
+\subsection{Einleitung}
+Bei der Programmierung des Projekts haben wir einen objektorientierten Lösungsansatz gewählt. Dies haben wir einerseits wegen der Thematisierung der Objekt-Orientierten-Programmierung (OOP) im Informatikunterricht und andererseits wegen dem einfachen Bezug dem man hier zwischen realen Objekten (Sensor, Motor) und zugehörigen Klassen herstellen kann. Außerdem ist die OOP einer der Paradigmen, welche in der Realität benutzt werden. 
+
+\subsection{Python}
+Als Programmiersprache haben wir Python gewählt, da wir diese Sprache im Informatikunterricht verwenden, sie für Laien leicht verständlich ist und wir mehrere Personen in der Gruppe bzw. dem nahen Umfeld haben, welche diese Sprache bereits gut können. Außerdem unterstützt Python die OOP, wodurch die Sprache auch unsere Paradigmenwahl zulässt. Da sie eine beliebte und weitverbreitete Sprache ist unterstützt sowohl das aktuelle Image das wir auf dem Pi haben, als auch der Hersteller unsere Sensoren die Sprache. Auch kann man sagen, dass die Sprachwahl es uns ermöglicht Code, welcher schon früher von einzelnen Mitgliedern geschrieben wurde, wieder zu benutzen.  Ein Nachteil ist hier, dass Python nicht alle Konzepte der OOP unterstützt (zum Beispiel Abstrakte Klassen, Interfaces/Traits).
+
+\subsection{Programmstruktur}
+Jedes große Bauteil bekommt eine Klasse zugewiesen. Die wichtigen Bauteile sind hier: die Sensoren, die Motoren, die Motortreiber und der Raspberrypi. Für die Sensoren haben wir drei Klassen: Einmal eine abstrakte Klasse Sensor, welche definiert, dass jeder Sensor ein Signal auslesen(get\_value) und die Bezeichnung des Pins ausgeben(get\_location) kann. Wir haben dann zwei Klassen, namentlich LightSensor und DistanceSensor, welche von Sensor erben, und jeweils die Methode zum Signalauslesen, sowie den Konstruktor überschreiben.
+
+\section{Technologien}
+
+\subsection{Github}
+
+Die Gruppe benutzt Github als unser Versionskontrollsystem. Github bietet sich hier an, weil einerseits git auf dem Raspberrypi ist, wodurch man immer die aktuellste Version des Programmes auf dem Pi haben können. Außerdem erleichtert Github das gleichzeitige Arbeiten, sodass mehrere Leute gleichzeitig programmieren, und die Programme schlussendlich hochladen können. Ein weiteres Plus ist, dass Github eine große Anzahl an letzten Versionen speichert, wodurch auch spät erkannte Fehler leicht überwunden werden können. Als letztes Argument für diese Technologie ist zu sagen, dass sie quasi als Dokumentation für alles was auf Github hochgeladen wird dienen kann. Da man jeden Schritt nachvollziehen kann. 
+
+\subsection{Slack}
+
+
+
+\subsection{\LaTeX}
+
+Für die Tagesdokumentationen und die Hauptdokumentation wird LaTeX verwendet. Dies ist einerseits eine Referenz auf die echte Welt, in welcher LaTeX oft (im wissenschaftlichem und im privaten) benutzt wird. Andererseits wollen wir von den Vorteilen profitieren. Die Vorteile liegen in darin, dass man einfacher alle Kapitel, Sektionen und Formeln variable gleichzeitig ändern können. Außerdem ist LaTeX eine alternative zu Word, wobei man viele der üblichen Probleme von Word umgeht. Beispiele wären hier zum Beispiel Verschiebung von Text bei dem Einfügen von Bildern, welches man in LaTeX deutlicher definieren muss. 
+
+\subsection{Hilfsprogramme?}
+
+\section{Elektrotechnik}
+
+\chapter{Praxis}
+
+\section{Probleme und Problemlösungen}
+
+\section{Menschliche Zusammenarbeit}
+
+\chapter{Anhang}
+\section{Quellen}
+
+\subsection{Elektrotechnik}
+\begin{itemize}
+
+\item \url{http://cdn-reichelt.de/documents/datenblatt/A100/BC546_48-CDIL.pdf}
+
+
+\item \url{http://anleitung.joy-it.net/wp-content/uploads/2017/06/SBC-MotoDriver2-Anleitung.pdf}
+
+\item \url{http://cdn-reichelt.de/documents/datenblatt/A300/COM_MOTOR_RAD_DB-DE.pdf}
+
+\end{itemize}
+
+\subsection{RaspberryPi}
+
+\begin{itemize}
+
+\item \url{https://www.terraelectronica.ru/pdf/show?pdf_file=%252Fds%252Fpdf%252FT%252FTechicRP3.pdf}
+
+\item \url{http://www.netzmafia.de/skripten/hardware/RasPi/RasPi_GPIO_C.html}
+
+\item \url{https://help.github.com/enterprise/2.14/user/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/}
+
+\item \url{https://devmarketer.io/learn/set-ssh-key-github/}
+
+\end{itemize}
+
+\subsection{GrovePi}
+
+\begin{itemize}
+
+\item \url{http://cdn-reichelt.de/documents/datenblatt/A300/GRV_IR_DISTANCE_AL-EN.pdf}
+
+\item \url{http://www.mouser.com/catalog/specsheets/Seeed_101020022.pdf}
+
+\item \url{https://github.com/DexterInd/GrovePi/blob/master/Hardware/GrovePi%2B%20v3.0.pdf}
+
+\item \url{https://github.com/DexterInd/GrovePi/blob/master/Hardware/GrovePi%20Graphical%20Datasheet.jpg}
+
+\end{itemize}
+
+\end{document}
