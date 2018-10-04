@@ -1,0 +1,12 @@
+- Kamera Sensorik 
+- Lidar 
+- Ultraschall
+- Karosserie
+- Bessere Reifen 
+- Bessere Motoren
+- Lenkung einbauen (falls möglich)
+- Programmierung ausbaufähiger (4x4; FA; HA) Antrieb
+- Bremsassistent 
+- Automatischer Bremsassistent 
+- Spurassistent 
+- [Parkassistent (Perfekt einparken auch bei knappen PLatzraum)?]

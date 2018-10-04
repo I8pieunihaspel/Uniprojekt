@@ -1,0 +1,19 @@
+
+Protokoll H-Brücke
+
+04.09.2018 
+
+Uni
+Start: 11:05 Uhr 
+Ende: 14:00 Uhr
+
+Teilnehmer: Salome, Murat
+
+-Testen der beiden H-Brücken mit Motoren.
+-Probleme beim steuern der Motoren, da wir kein Input hatten.
+-Suche nach der Lösung, mit der anderen Gruppe.
+-Problem lösung : ein Parallel anschluss an 12V und jenach richtung der Motoren an den Inputs.
+-Testen aller Motoren.
+
+
+Wir sollten die H-Brücken mit den Motoren Testen und prüfen, ob sie funktionieren. Die Aufgaben der H-Brücken ist es die  4 Motoren zu steuern. Nach den wir die Black-Box mit der Stromquelle(E3611A DC Power Supply) (9V; 0,2mA) angeschlossen haben, hatten wir das Problem, das der Motor nicht funktioniert. Mit der zusammen arbeit der anderen Gruppe haben wir das problem herraus gefunden und gelöst. Die Black-Box hatte kein Input, die lösung war, zwischen +12V und der Energiequelle einen Parallel anschluss,welches an die Inputs verbindet und jenach richtung wird der Input geändert. 
