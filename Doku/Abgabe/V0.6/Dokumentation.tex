@@ -1,6 +1,7 @@
 \documentclass{report}
 
 \usepackage{hyperref}
+\usepackage{graphicx}
 
 \author{Manuel Hinz}
 
@@ -30,10 +31,15 @@ Es gibt viele m\"{o}gliche Aufgaben, die man im Rahmen des Themas l\"{o}sen k\"{
 Bei der Programmierung des Projekts haben wir einen objektorientierten L\"{o}sungsansatz gew\"{a}hlt. Dies haben wir einerseits wegen der Thematisierung der Objekt-Orientierten-Programmierung (OOP) im Informatikunterricht und andererseits wegen dem einfachen Bezug dem man hier zwischen realen Objekten (Sensor, Motor) und zugeh\"{o}rigen Klassen herstellen kann. Au{\ss}erdem ist die OOP einer der Paradigmen, welche in der Realit\"{a}t benutzt werden. 
 
 \subsection{Python}
-Als Programmiersprache haben wir Python gew\"{a}hlt, da wir diese Sprache im Informatikunterricht verwenden, sie f\"{u}r Laien leicht verst\"{a}ndlich ist und wir mehrere Personen in der Gruppe bzw. dem nahen Umfeld haben, welche diese Sprache bereits gut k\"{o}nnen. Au{\ss}erdem unterst\"{u}tzt Python die OOP, wodurch die Sprache auch unsere Paradigmenwahl zul\"{a}sst. Da sie eine beliebte und weitverbreitete Sprache ist unterst\"{u}tzt sowohl das aktuelle Image das wir auf dem Pi haben, als auch der Hersteller unsere Sensoren die Sprache. Auch kann man sagen, dass die Sprachwahl es uns erm\"{o}glicht Code, welcher schon fr\"{u}her von einzelnen Mitgliedern geschrieben wurde, wieder zu benutzen.  Ein Nachteil ist hier, dass Python nicht alle Konzepte der OOP unterst\"{u}tzt (zum Beispiel Abstrakte Klassen, Interfaces/Traits).
+Als Programmiersprache haben wir Python gew\"{a}hlt, da wir diese Sprache im Informatikunterricht verwenden, sie f\"{u}r Laien leicht verst\"{a}ndlich ist und wir mehrere Personen in der Gruppe bzw. dem nahen Umfeld haben, welche diese Sprache bereits gut k\"{o}nnen. Au{\ss}erdem unterst\"{u}tzt Python die OOP, wodurch die Sprache auch unsere Paradigmenwahl zul\"{a}sst. Da sie eine beliebte und weitverbreitete Sprache ist unterst\"{u}tzt sowohl das aktuelle Image das wir auf dem Pi haben, als auch der Hersteller unsere Sensoren die Sprache. Auch kann man sagen, dass die Sprachwahl es uns erm\"{o}glicht Code, welcher schon fr\"s{u}her von einzelnen Mitgliedern geschrieben wurde, wieder zu benutzen.  Ein Nachteil ist hier, dass Python nicht alle Konzepte der OOP unterst\"{u}tzt (zum Beispiel Abstrakte Klassen, Interfaces/Traits).
 
 \subsection{Programmstruktur}
 Jedes gro{\ss}e Bauteil bekommt eine Klasse zugewiesen. Die wichtigen Bauteile sind hier: die Sensoren, die Motoren, die Motortreiber und der Raspberrypi. F\"{u}r die Sensoren haben wir drei Klassen: Einmal eine abstrakte Klasse Sensor, welche definiert, dass jeder Sensor ein Signal auslesen(get\_value) und die Bezeichnung des Pins ausgeben(get\_location) kann. Wir haben dann zwei Klassen, namentlich LightSensor und DistanceSensor, welche von Sensor erben, und jeweils die Methode zum Signalauslesen, sowie den Konstruktor \"{u}berschreiben.
+
+\subsection{Dateistrukturen}
+
+\includegraphics{Struktur.png}
+
 
 \section{Technologien}
 
@@ -55,7 +61,9 @@ Unsere Gruppe benutzte Anfangs Slack f\"{u}r Dateienspeicherung und Kommunikatio
 
 F\"{u}r die Tagesdokumentationen und die Hauptdokumentation wird LaTeX verwendet. Dies ist einerseits eine Referenz auf die echte Welt, in welcher LaTeX oft (im wissenschaftlichem und im privaten) benutzt wird. Andererseits wollen wir von den Vorteilen profitieren. Die Vorteile liegen in darin, dass man einfacher alle Kapitel, Sektionen und Formeln variable gleichzeitig \"{a}ndern k\"{o}nnen. Au{\ss}erdem ist LaTeX eine alternative zu Word, wobei man viele der \"{u}blichen Probleme von Word umgeht. Beispiele w\"{a}ren hier zum Beispiel Verschiebung von Text bei dem Einf\"{u}gen von Bildern, welches man in LaTeX deutlicher definieren muss. 
 
-\subsection{Hilfsprogramme?}
+\subsection{Hilfsprogramm}
+
+Im Rahmen der Dokumentation gab es immer wieder Schwierigkeiten, da man in LaTeX einige Zeichen nicht einfach so schreiben darf, wenn sie entweder nicht von der Kodierung unterstützt werden (Beispiel: ä, Ü) oder schon eine Andere Belegung haben (Bsp.: \_). Damit das schreiben der Dokumentation möglichst schnell passiert wurde deshalb von uns ein Skript geschrieben, welches alle diese problematischen Zeichen durch die LaTeX-Schreibweise ersetzt. Das Skript ist hier jedoch nur eine temporäre Lösung, weshalb man zum Beispiel den Pfad der Latex Datei nicht an das Skript weitergibt, sondern den Pfad innerhalb einer Variablen des Skriptes schreibt.
 
 \section{Elektrotechnik}
 
