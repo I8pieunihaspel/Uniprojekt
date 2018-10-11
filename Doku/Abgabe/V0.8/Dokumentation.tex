@@ -10,7 +10,6 @@
 \maketitle
 \includegraphics[scale=1]{BKAH.png}
 
-
 \includegraphics[scale=0.75]{Uni.png}
 
 \tableofcontents
@@ -27,7 +26,7 @@ Es gibt viele m\"{o}gliche Aufgaben, die man im Rahmen des Themas l\"{o}sen k\"{
 
 \section{Ausblick}
 
-Wenn man das Projekt Zukünftig fertigstellen würde, könnte man einige Eigenschaften hinzufügen wie zum Beispiel ein Bildsensor. Durch den Bildsensor kann man Aufnahmen von zweidimensionalen Abbildern aus Licht erstellen, auf dem elektrischem oder mechanischem Wege. Eine andere Alternative zum Bildsensor wäre ein Lidar, ein Gerät das Laserstrahlen ausstrahlt und die reflektierten Strahlen mit einem Sensor misst. Die letzte Alternative wäre ein Ultraschallsensor. Der Ultraschallsensor erzeugt Schallwellen, nimmt diese dann auf und berechnet somit die Entfernung zum Hindernis. Generell könnte man eine Karosserie um das Gestell bauen um die Elektronik zu schützen oder verstecken und um das Fahrzeug selbst zur Geltung zu bringen. Eine weiter Möglichkeit wäre das man bessere Reifen anbringt, damit das Auto schneller fahren kann oder je nach Reifentyp und Motor kleine Gebirge und Oberflächen bezwingen kann. Eine schöne Ergänzung für das Auto wäre eine Lenkung, sodass man das Auto fernsteuern könnte, wenn man es sich wünschen würde. Eine feine Ergänzung wäre, wenn man den Antrieb programmieren würde, um in bestimmten Situationen mit dem Auto besser fahren zu können zum Beispiel: auf Eis, Schotter (Offroad) und Neigungen. Kurz gesagt das man ein ABS-System entwickelt. Zuletzt könnte man noch eine Achsenlenkung erstellen um die Lenkung selbst zu verbessern, um das einparken zu vereinfachen und effizienter machen.
+Wenn man das Projekt Zuk\"{u}nftig fertigstellen w\"{u}rde, k\"{o}nnte man einige Eigenschaften hinzuf\"{u}gen wie zum Beispiel ein Bildsensor. Durch den Bildsensor kann man Aufnahmen von zweidimensionalen Abbildern aus Licht erstellen, auf dem elektrischem oder mechanischem Wege. Eine andere Alternative zum Bildsensor w\"{a}re ein Lidar, ein Ger\"{a}t das Laserstrahlen ausstrahlt und die reflektierten Strahlen mit einem Sensor misst. Die letzte Alternative w\"{a}re ein Ultraschallsensor. Der Ultraschallsensor erzeugt Schallwellen, nimmt diese dann auf und berechnet somit die Entfernung zum Hindernis. Generell k\"{o}nnte man eine Karosserie um das Gestell bauen um die Elektronik zu sch\"{u}tzen oder verstecken und um das Fahrzeug selbst zur Geltung zu bringen. Eine weiter M\"{o}glichkeit w\"{a}re das man bessere Reifen anbringt, damit das Auto schneller fahren kann oder je nach Reifentyp und Motor kleine Gebirge und Oberfl\"{a}chen bezwingen kann. Eine sch\"{o}ne Erg\"{a}nzung f\"{u}r das Auto w\"{a}re eine Lenkung, sodass man das Auto fernsteuern k\"{o}nnte, wenn man es sich w\"{u}nschen w\"{u}rde. Eine feine Erg\"{a}nzung w\"{a}re, wenn man den Antrieb programmieren w\"{u}rde, um in bestimmten Situationen mit dem Auto besser fahren zu k\"{o}nnen zum Beispiel: auf Eis, Schotter (Offroad) und Neigungen. Kurz gesagt das man ein ABS-System entwickelt. Zuletzt k\"{o}nnte man noch eine Achsenlenkung erstellen um die Lenkung selbst zu verbessern, um das einparken zu vereinfachen und effizienter machen.
 
 \section{Programmierung}
 
@@ -41,18 +40,18 @@ Als Programmiersprache haben wir Python gew\"{a}hlt, da wir diese Sprache im Inf
 Jedes gro{\ss}e Bauteil bekommt eine Klasse zugewiesen. Die wichtigen Bauteile sind hier: die Sensoren, die Motoren, die Motortreiber und der Raspberrypi. F\"{u}r die Sensoren haben wir drei Klassen: Einmal eine abstrakte Klasse Sensor, welche definiert, dass jeder Sensor ein Signal auslesen(get\_value) und die Bezeichnung des Pins ausgeben(get\_location) kann. Wir haben dann zwei Klassen, namentlich LightSensor und DistanceSensor, welche von Sensor erben, und jeweils die Methode zum Signalauslesen, sowie den Konstruktor \"{u}berschreiben.
 
 \subsection{Simulation}
-Nach dem die Realisierung des praktischen Teils nicht erfolgreich war, wurde die Informatische Leistung auf eine Simulation in Javascript fokussiert, damit wenigstens die Programmierung präsentiert werden kann. Diese Simulation benutz P5.js, was eine Javascriptbibliothek ist. In dieser Simulation soll ein Auto in eine Parklücke, welche durch zwei Hindernisse begrenzt ist, einparken. Es gibt hier momentan eine Klasse für das Auto („Car“) und eine Klasse für die Hindernisse („Obstacle“). Das Hauptskript findet sich in der Datei „sketch.js“. Später würde man auch eine Klasse für die Intelligenz des Autos („Agent“) finden. Im jetzigen Zustand wird die Bewegung des Autos durch einen Geschwindigkeitsvektor und einen Beschleunigungsvektor simuliert. Außerdem wird die Ausrichtung des Autos durch die Ausrichtung des Geschwindigkeitsvektors bestimmt. In der aktuellen Version der Simulation ist der Lenkvorgang beim Einparken verfügbar, sodass für eine erste funktionsfähige Version nur noch Kollisionsdetektion und das Benutzen von Sensoren um Kollisionen zu verhindern fehlt.     
+Nach dem die Realisierung des praktischen Teils nicht erfolgreich war, wurde die Informatische Leistung auf eine Simulation in Javascript fokussiert, damit wenigstens die Programmierung pr\"{a}sentiert werden kann. Diese Simulation benutz P5.js, was eine Javascriptbibliothek ist. In dieser Simulation soll ein Auto in eine Parkl\"{u}cke, welche durch zwei Hindernisse begrenzt ist, einparken. Es gibt hier momentan eine Klasse f\"{u}r das Auto („Car“) und eine Klasse f\"{u}r die Hindernisse („Obstacle“). Das Hauptskript findet sich in der Datei „sketch.js“. Sp\"{a}ter w\"{u}rde man auch eine Klasse f\"{u}r die Intelligenz des Autos („Agent“) finden. Im jetzigen Zustand wird die Bewegung des Autos durch einen Geschwindigkeitsvektor und einen Beschleunigungsvektor simuliert. Au{\ss}erdem wird die Ausrichtung des Autos durch die Ausrichtung des Geschwindigkeitsvektors bestimmt. In der aktuellen Version der Simulation ist der Lenkvorgang beim Einparken verf\"{u}gbar, sodass f\"{u}r eine erste funktionsf\"{a}hige Version nur noch Kollisionsdetektion und das Benutzen von Sensoren um Kollisionen zu verhindern fehlt.     
 \includegraphics[scale=0.5]{Bild_Simulation.png}
 
 \subsection{Dateistrukturen}
 
 \includegraphics{Struktur.png}
-Alle Dateien wurden auf Github hochgeladen. Die Struktur, welche gewählt wurde ist im obigen Bild dargestellt und in diesem Text genauer erläutert. 
-Der erste Unterordner trägt den Namen „Doku“. In diesem werden alle Dateien für die Dokumentation gespeichert, der Ordner ist jedoch noch mal in vier Unterordner unterteilt. Diese Ordner sind: erstens „Abgabe“, in welchem alle Dateien für diese Dokumentation zu finden sind, zweitens „Grundwissen“, in welchem Dateien sind, die alle in der Gruppe befähigen sollen, jede Aufgabe eigenständig zu lösen, drittens „Quellen“, in welchem alle unsere Quellen aufgeführt sind und viertens „Tagesdokus“, in welchem alle Tagesdokumentationen sind.
-Der zweiter Unterordner „Hardware“ enthält Datenblätter und Messungen in jeweils einem eigenen Unterordner. Es ist hier anzumerken, dass nicht alle Bauteile ein Datenblatt und Messungen haben.
-Der Unterordner „Software“ beinhaltet alle eigenen Programme und Skripte. Alle Dateien wurden in die Ordner „Endprogramm“, „Simulation“, „Testen“ und „Tools“ einsortiert. Der Ordner „Endprogramm“ sollte das Programm, was am Ende auf dem Pi läuft, beherbergen. Das wären, im Falle Fertigstellung des Programmes, eine Datei pro Klassengruppe.  Alles was im Unterordner „Simulation“ befindet ist für die Simulation, welche Html und Javascript benutzt. In dem Ordner „Test“ befindet sich Python-Skripte, welche während der Entwicklung des Autos zum Testen einzelner Funktionen (wie z.B. der Reichweite der Abstandssensoren) benutzt werden.
-Der Ordner „Regeln“ beinhaltet Dateien, welche Regeln festhalten, die die Zusammenarbeit in der Gruppe erleichtern sollen. Der Ordner Präsentation beinhaltet unterschiedliche Versionen der Präsentation. Im Ordner „Zeitplan“ befindet sich immer der aktuelle Zeitplan samt Anwesenheitsliste.  Alle Fotos sind in dem Ordner „Photos“ um die Dokumentation und die Präsentation zu vervollständigen. 
-Durch diese Struktur sollen Dateien immer leicht zu finden sein. Außerdem wird durch diese Struktur die Abgrenzung von einzelnen Aufgabengebieten einfacher, wodurch sich alle Beteiligten leicht in jede Unteraufgabe eindenken können sollen. 
+Alle Dateien wurden auf Github hochgeladen. Die Struktur, welche gew\"{a}hlt wurde ist im obigen Bild dargestellt und in diesem Text genauer erl\"{a}utert. 
+Der erste Unterordner tr\"{a}gt den Namen „Doku“. In diesem werden alle Dateien f\"{u}r die Dokumentation gespeichert, der Ordner ist jedoch noch mal in vier Unterordner unterteilt. Diese Ordner sind: erstens „Abgabe“, in welchem alle Dateien f\"{u}r diese Dokumentation zu finden sind, zweitens „Grundwissen“, in welchem Dateien sind, die alle in der Gruppe bef\"{a}higen sollen, jede Aufgabe eigenst\"{a}ndig zu l\"{o}sen, drittens „Quellen“, in welchem alle unsere Quellen aufgef\"{u}hrt sind und viertens „Tagesdokus“, in welchem alle Tagesdokumentationen sind.
+Der zweiter Unterordner „Hardware“ enth\"{a}lt Datenbl\"{a}tter und Messungen in jeweils einem eigenen Unterordner. Es ist hier anzumerken, dass nicht alle Bauteile ein Datenblatt und Messungen haben.
+Der Unterordner „Software“ beinhaltet alle eigenen Programme und Skripte. Alle Dateien wurden in die Ordner „Endprogramm“, „Simulation“, „Testen“ und „Tools“ einsortiert. Der Ordner „Endprogramm“ sollte das Programm, was am Ende auf dem Pi l\"{a}uft, beherbergen. Das w\"{a}ren, im Falle Fertigstellung des Programmes, eine Datei pro Klassengruppe.  Alles was im Unterordner „Simulation“ befindet ist f\"{u}r die Simulation, welche Html und Javascript benutzt. In dem Ordner „Test“ befindet sich Python-Skripte, welche w\"{a}hrend der Entwicklung des Autos zum Testen einzelner Funktionen (wie z.B. der Reichweite der Abstandssensoren) benutzt werden.
+Der Ordner „Regeln“ beinhaltet Dateien, welche Regeln festhalten, die die Zusammenarbeit in der Gruppe erleichtern sollen. Der Ordner Pr\"{a}sentation beinhaltet unterschiedliche Versionen der Pr\"{a}sentation. Im Ordner „Zeitplan“ befindet sich immer der aktuelle Zeitplan samt Anwesenheitsliste.  Alle Fotos sind in dem Ordner „Photos“ um die Dokumentation und die Pr\"{a}sentation zu vervollst\"{a}ndigen. 
+Durch diese Struktur sollen Dateien immer leicht zu finden sein. Au{\ss}erdem wird durch diese Struktur die Abgrenzung von einzelnen Aufgabengebieten einfacher, wodurch sich alle Beteiligten leicht in jede Unteraufgabe eindenken k\"{o}nnen sollen. 
 
 
 \section{Technologien}
@@ -77,7 +76,7 @@ F\"{u}r die Tagesdokumentationen und die Hauptdokumentation wird LaTeX verwendet
 
 \subsection{Hilfsprogramm}
 
-Im Rahmen der Dokumentation gab es immer wieder Schwierigkeiten, da man in LaTeX einige Zeichen nicht einfach so schreiben darf, wenn sie entweder nicht von der Kodierung unterstützt werden (Beispiel: ä, Ü) oder schon eine Andere Belegung haben (Bsp.: \_). Damit das schreiben der Dokumentation möglichst schnell passiert wurde deshalb von uns ein Skript geschrieben, welches alle diese problematischen Zeichen durch die LaTeX-Schreibweise ersetzt. Das Skript ist hier jedoch nur eine temporäre Lösung, weshalb man zum Beispiel den Pfad der Latex Datei nicht an das Skript weitergibt, sondern den Pfad innerhalb einer Variablen des Skriptes schreibt.
+Im Rahmen der Dokumentation gab es immer wieder Schwierigkeiten, da man in LaTeX einige Zeichen nicht einfach so schreiben darf, wenn sie entweder nicht von der Kodierung unterst\"{u}tzt werden (Beispiel: \"{a}, \"{U}) oder schon eine Andere Belegung haben (Bsp.: \_). Damit das schreiben der Dokumentation m\"{o}glichst schnell passiert wurde deshalb von uns ein Skript geschrieben, welches alle diese problematischen Zeichen durch die LaTeX-Schreibweise ersetzt. Das Skript ist hier jedoch nur eine tempor\"{a}re L\"{o}sung, weshalb man zum Beispiel den Pfad der Latex Datei nicht an das Skript weitergibt, sondern den Pfad innerhalb einer Variablen des Skriptes schreibt.
 
 \section{Elektrotechnik}
 
@@ -97,6 +96,8 @@ Wenn man einen Strom messen will sollte man zuerst einmal das Multimeter in die 
 
 \subsubsection{PWM}
 
+PWM steht f\"{u}r PulsWeitenModulation bzw. Pulse-Width-Modulation. Diese wird zum Beispiel genutzt um durch den digitalen Ausgangswert eines Microcontrollers ein analoges Ger\"{a}t (z.B. einen Motor) anzusteuern. Dies funktioniert indem innerhalb einer Periode der Dauer $T$ f\"{u}r eine bestimmte Zeit $T_{ein}$ eine Spannung anliegt die f\"{u}r „an“ steht (also das high ist) und dann f\"{u}r eine bestimmte Zeit $T_{aus}$ eine Spannung anlieht die f\"{u}r „aus“ steht (also das low ist). Die Spannung die damit zum Beispiel bei einem Motor anliegt ist durch die Formel $U_m = U_{ein} * \frac{T_{ein}}{T}$ gegeben, wenn $U_{aus}$ eine Spannung von 0V ist. Dies w\"{a}re benutzt worden um die H-Br\"{u}cken und damit die Motoren anzusprechen.
+
 \subsubsection{AD/DA Wandler}
 
 \subsubsection{Spannungsteiler}
@@ -105,9 +106,9 @@ Wenn man einen Strom messen will sollte man zuerst einmal das Multimeter in die 
 
 \subsubsection{Grundkonzept}
 
-Die Schaltung für das Selbsteinparkende Auto beinhaltet de Pi + Groovepi, die acht Distanzsensoren(DS 1-8) , die vier Lichtsensoren(LS 1-4),die zwei H-Brücken, vier Motoren(M 1-4),eine Powerbank und zwei 9V Blöcke.
+Die Schaltung f\"{u}r das Selbsteinparkende Auto beinhaltet de Pi + Groovepi, die acht Distanzsensoren(DS 1-8) , die vier Lichtsensoren(LS 1-4),die zwei H-Br\"{u}cken, vier Motoren(M 1-4),eine Powerbank und zwei 9V Bl\"{o}cke.
 
-Die Powerbank versorgt den Pi ,den Groovepi und die Sensoren mit dem nötigen Strom damit alles funktioniert, der Pi/Grovepi sendet ein Signal an die Inputs der H-Brücke welche von jeweils einem 9V Block versorgt werden und Außerdem auch die Motoren mit Strom versorgen welche von der H-Brücke auch gesteuert werden damit diese sich nach links oder rechts drehen.
+Die Powerbank versorgt den Pi ,den Groovepi und die Sensoren mit dem n\"{o}tigen Strom damit alles funktioniert, der Pi/Grovepi sendet ein Signal an die Inputs der H-Br\"{u}cke welche von jeweils einem 9V Block versorgt werden und Au{\ss}erdem auch die Motoren mit Strom versorgen welche von der H-Br\"{u}cke auch gesteuert werden damit diese sich nach links oder rechts drehen.
 
 \includegraphics[scale=0.5]{1.png}
 
@@ -135,22 +136,22 @@ Die Messungen wurden von Phillip Schulz, Robert Grabarski, Manuel Hinz und Salom
 
 \subsection{Gel\"{o}ste Probleme}
 
-Im Rahmen des Projektes mussten einige Probleme überwunden werden. Das erste Problem war die Inbetriebnahme und Ansteuerung des Pis, da vor Ort kein Netzwerk war mit welchem man sich hätte verbinden können. Dies ist ein Problem, da alles was auf dem Pi passierte durch VNC geschah. Doch damit man VNC benutzen kann müssen das Gerät auf das man zugreifen will und das Gerät von welchem man agieren will im gleichen Netzwerk sein. Dieses Problem wurde durch das benutzen von privatem Datenvolumen aus den jeweiligen Handyveträgen gelöst. Ein weiteres Problem trat bei der Inbetriebnahme der Sensoren auf, als sich die Distanzsensoren nicht richtig kalibrieren ließen, weil die Störsignale (das Licht im Raum) zu groß bzw. hell waren. Dieses Problem ließ sich nicht direkt lösen, außer durch eine Verlegung des Ortes. Der Flur war hier schon dunkel genug, so dass man dieses Problem zu mindestens bei einer Präsentation hätte umgehen können. Doch es gab noch mehr Probleme mit diesen Sensoren, da sie scheinbar nicht zu kalibrieren waren. Das konnte jedoch später wiederlegt werden als festgestellt wurde, dass man nur den Pi nach jedem Kalibrieren neustarten sollte. Ein weiteres Problem war das Ansteuern von Pins des Pis und des GrovePis, da es hier viele widersprüchlicher Informationen im Internet gab. Nach viel Arbeit konnten jedoch die passendend Datenblätter gefunden werden. 
+Im Rahmen des Projektes mussten einige Probleme \"{u}berwunden werden. Das erste Problem war die Inbetriebnahme und Ansteuerung des Pis, da vor Ort kein Netzwerk war mit welchem man sich h\"{a}tte verbinden k\"{o}nnen. Dies ist ein Problem, da alles was auf dem Pi passierte durch VNC geschah. Doch damit man VNC benutzen kann m\"{u}ssen das Ger\"{a}t auf das man zugreifen will und das Ger\"{a}t von welchem man agieren will im gleichen Netzwerk sein. Dieses Problem wurde durch das benutzen von privatem Datenvolumen aus den jeweiligen Handyvetr\"{a}gen gel\"{o}st. Ein weiteres Problem trat bei der Inbetriebnahme der Sensoren auf, als sich die Distanzsensoren nicht richtig kalibrieren lie{\ss}en, weil die St\"{o}rsignale (das Licht im Raum) zu gro{\ss} bzw. hell waren. Dieses Problem lie{\ss} sich nicht direkt l\"{o}sen, au{\ss}er durch eine Verlegung des Ortes. Der Flur war hier schon dunkel genug, so dass man dieses Problem zu mindestens bei einer Pr\"{a}sentation h\"{a}tte umgehen k\"{o}nnen. Doch es gab noch mehr Probleme mit diesen Sensoren, da sie scheinbar nicht zu kalibrieren waren. Das konnte jedoch sp\"{a}ter wiederlegt werden als festgestellt wurde, dass man nur den Pi nach jedem Kalibrieren neustarten sollte. Ein weiteres Problem war das Ansteuern von Pins des Pis und des GrovePis, da es hier viele widerspr\"{u}chlicher Informationen im Internet gab. Nach viel Arbeit konnten jedoch die passendend Datenbl\"{a}tter gefunden werden. 
 
 \subsection{Ungel\"{o}ste Probleme}
 
 \subsubsection{Ausgangssignal des Pis}
 
-Eines der Probleme welches wir mit dem Pi hatten war die Ansteuerung des Motors, da die Output Spannung von unserem Pi bei einem High Signal nur 3,3 mV Gleichspannung war welches nicht ausreicht um in dem uns Zugewiesen Zeitraum eine mit dieser Geringen Spannung Anständig funktionierende Schaltung zu bauen , aber dieses Problem ist eines welches bei unserem Model des Pi(3b)häufiger vorkommt zumindest laut mehren Foreneinträgen welche wir gefunden hatten , wo auch gesagt wurde das es keine Lösung für dieses Problem gäbe außer einen neuen Pi zu holen 
+Eines der Probleme welches wir mit dem Pi hatten war die Ansteuerung des Motors, da die Output Spannung von unserem Pi bei einem High Signal nur 3,3 mV Gleichspannung war welches nicht ausreicht um in dem uns Zugewiesen Zeitraum eine mit dieser Geringen Spannung Anst\"{a}ndig funktionierende Schaltung zu bauen , aber dieses Problem ist eines welches bei unserem Model des Pi(3b)h\"{a}ufiger vorkommt zumindest laut mehren Foreneintr\"{a}gen welche wir gefunden hatten , wo auch gesagt wurde das es keine L\"{o}sung f\"{u}r dieses Problem g\"{a}be au{\ss}er einen neuen Pi zu holen 
 
 
 \section{Teamdynamik}
 
-Am Anfang ergab sich die Problematik, da unsere Gruppe nur aus fünf Individuen bestand, dass wir keinen Teamleiter ernennen konnten. Darum hat sich die Gruppe entschlossen, einzelne Teilverantwortliche zu ernennen. Diese waren für einen bestimmten Bereich verantwortlich, mussten jedoch diesen nicht alleine bearbeiten, denn sie waren dazu befähigt ein anderes Teammitglied, welches zu diesem Zeitpunkt keine Arbeit hatte oder einen Leerlauf, für bestimmte Aufgaben heranzuziehen.
+Am Anfang ergab sich die Problematik, da unsere Gruppe nur aus f\"{u}nf Individuen bestand, dass wir keinen Teamleiter ernennen konnten. Darum hat sich die Gruppe entschlossen, einzelne Teilverantwortliche zu ernennen. Diese waren f\"{u}r einen bestimmten Bereich verantwortlich, mussten jedoch diesen nicht alleine bearbeiten, denn sie waren dazu bef\"{a}higt ein anderes Teammitglied, welches zu diesem Zeitpunkt keine Arbeit hatte oder einen Leerlauf, f\"{u}r bestimmte Aufgaben heranzuziehen.
 Somit ergab sich eine stetige Kommunikation innerhalb der Gruppe, den trotz der Hauptverantwortung des einzelnen musste dieser nicht ein Experte in diesem Bereich sein, mithilfe des Informationsaustausches.
-Es ergaben sich jedoch auch einige Probleme durch diese Art der Aufgabenverteilung. Ein Mitglied der Gruppe war Aufgrund einer Krankheit die ersten 4 Termine nicht anwesend und musste innerhalb eines Termines auf den aktuellen Stand des Projektes gebracht werden. Dies konnte man jedoch nicht verhindern. Ein anderes Problem war die schwindende oder keinerlei vorhandene Motivation einzelner Individuen, die jedoch für schwerwiegende Bereiche verantwortlich waren, darüber hinaus arbeiteten diese auch nur wenn man sie explizit auf bestimmte Aufgaben ansetzte. 
-Diese Probleme hätte man lösen können indem man mehrere für einzelne Bereiche Verantwortlich hätte machen sollen oder einen Hauptverantwortlichen für das komplette Projekt erklären können.
-Die Allgemeine Dynamik des Teams war rückblickend positiv. Jeder hat seinen Teil für das Projekt beigetragen und anderen Mitgliedern geholfen.
+Es ergaben sich jedoch auch einige Probleme durch diese Art der Aufgabenverteilung. Ein Mitglied der Gruppe war Aufgrund einer Krankheit die ersten 4 Termine nicht anwesend und musste innerhalb eines Termines auf den aktuellen Stand des Projektes gebracht werden. Dies konnte man jedoch nicht verhindern. Ein anderes Problem war die schwindende oder keinerlei vorhandene Motivation einzelner Individuen, die jedoch f\"{u}r schwerwiegende Bereiche verantwortlich waren, dar\"{u}ber hinaus arbeiteten diese auch nur wenn man sie explizit auf bestimmte Aufgaben ansetzte. 
+Diese Probleme h\"{a}tte man l\"{o}sen k\"{o}nnen indem man mehrere f\"{u}r einzelne Bereiche Verantwortlich h\"{a}tte machen sollen oder einen Hauptverantwortlichen f\"{u}r das komplette Projekt erkl\"{a}ren k\"{o}nnen.
+Die Allgemeine Dynamik des Teams war r\"{u}ckblickend positiv. Jeder hat seinen Teil f\"{u}r das Projekt beigetragen und anderen Mitgliedern geholfen.
 
 
 \chapter{Anhang}
@@ -164,7 +165,7 @@ Die Allgemeine Dynamik des Teams war rückblickend positiv. Jeder hat seinen Tei
 \item \href{http://cdn-reichelt.de/documents/datenblatt/A100/BC546_48-CDIL.pdf}{Datenblatt : Transistor}
 
 
-\item \href{http://anleitung.joy-it.net/wp-content/uploads/2017/06/SBC-MotoDriver2-Anleitung.pdf}{Anleitung H-Brücke}
+\item \href{http://anleitung.joy-it.net/wp-content/uploads/2017/06/SBC-MotoDriver2-Anleitung.pdf}{Anleitung H-Br\"{u}cke}
 
 \item \href{http://cdn-reichelt.de/documents/datenblatt/A300/COM_MOTOR_RAD_DB-DE.pdf}{Datenblatt : Motor}
 
@@ -176,9 +177,9 @@ Die Allgemeine Dynamik des Teams war rückblickend positiv. Jeder hat seinen Tei
 
 \item \href{http://www.netzmafia.de/skripten/hardware/RasPi/RasPi_GPIO_C.html}{Ansteuerung des Pis}
 
-\item \href{https://help.github.com/enterprise/2.14/user/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/}{ssh für Github auf dem Pi}
+\item \href{https://help.github.com/enterprise/2.14/user/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/}{ssh f\"{u}r Github auf dem Pi}
 
-\item \href{https://devmarketer.io/learn/set-ssh-key-github/}{ssh für Github auf dem Pi}
+\item \href{https://devmarketer.io/learn/set-ssh-key-github/}{ssh f\"{u}r Github auf dem Pi}
 
 \end{itemize}
 

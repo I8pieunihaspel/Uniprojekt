@@ -19,7 +19,7 @@ def replace(s):
         return s
 
 if __name__ == "__main__":
-    path = "C:\\Info\\Languages\\LaTeX\\WLAbgabe2\\Rechnungen.tex"
+    path = "C:\\Info\\Projects\\UniprojektGitHub\\Doku\\Abgabe\\V0.8\\Dokumentation.tex"
     file = io.open(path, "r", encoding="utf-8")
     data = [replace(c) for line in file for c in line]
     file.close()
