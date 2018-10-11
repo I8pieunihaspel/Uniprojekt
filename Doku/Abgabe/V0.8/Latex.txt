@@ -1,0 +1,4 @@
+Latex
+
+Latex ist die verkürzte version von Lamport Tex.
+Es ist ein Softwarepaket welches mit hilfe von Makros, die Benutzung von Textsatzsystems Tex vereinfacht. In Latex geht es hauptsächtlich um die Text der Autoren, die optische darstellung wird vom Programm aus gemacht und ist nicht im Vordergrund wie in den anderen Programmen (z.B. Microsoft Word). Latex wird meistens in Wissenschaftlichen bereichen benutzt. Einer der vorteile in Latex ist es auch, das Latex die benutzung von mathematischen Symbolen bis hin zu Musiknoten leichter macht und sie auch erlaubt. Für Anfäger ist es am anfang nicht so leicht.
