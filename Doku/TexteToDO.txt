@@ -3,6 +3,8 @@ Fachtexte zu:
 	GrovePi
 	H-Brücke
 	Motoren
-	Abstandssensor
+	Abstandssensor - Manuel
 	Helligkeitsensor
-	Theorieeinheiten
+	PWM
+	AD/DA Wandler
+	Spannungsteiler
