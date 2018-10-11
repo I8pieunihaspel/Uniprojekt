@@ -1,7 +1,7 @@
 Fachtexte zu:
 	Pi
 	GrovePi
-	H-Brücke
+	H-Brücke - Salome
 	Motoren
 	Abstandssensor - Manuel
 	Helligkeitsensor - Robert
