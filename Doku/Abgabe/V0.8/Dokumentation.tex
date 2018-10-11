@@ -25,6 +25,8 @@ Es gibt viele m\"{o}gliche Aufgaben, die man im Rahmen des Themas l\"{o}sen k\"{
 
 \section{Ausblick}
 
+Wenn man das Projekt Zukünftig fertigstellen würde, könnte man einige Eigenschaften hinzufügen wie zum Beispiel ein Bildsensor. Durch den Bildsensor kann man Aufnahmen von zweidimensionalen Abbildern aus Licht erstellen, auf dem elektrischem oder mechanischem Wege. Eine andere Alternative zum Bildsensor wäre ein Lidar, ein Gerät das Laserstrahlen ausstrahlt und die reflektierten Strahlen mit einem Sensor misst. Die letzte Alternative wäre ein Ultraschallsensor. Der Ultraschallsensor erzeugt Schallwellen, nimmt diese dann auf und berechnet somit die Entfernung zum Hindernis. Generell könnte man eine Karosserie um das Gestell bauen um die Elektronik zu schützen oder verstecken und um das Fahrzeug selbst zur Geltung zu bringen. Eine weiter Möglichkeit wäre das man bessere Reifen anbringt, damit das Auto schneller fahren kann oder je nach Reifentyp und Motor kleine Gebirge und Oberflächen bezwingen kann. Eine schöne Ergänzung für das Auto wäre eine Lenkung, sodass man das Auto fernsteuern könnte, wenn man es sich wünschen würde. Eine feine Ergänzung wäre, wenn man den Antrieb programmieren würde, um in bestimmten Situationen mit dem Auto besser fahren zu können zum Beispiel: auf Eis, Schotter (Offroad) und Neigungen. Kurz gesagt das man ein ABS-System entwickelt. Zuletzt könnte man noch eine Achsenlenkung erstellen um die Lenkung selbst zu verbessern, um das einparken zu vereinfachen und effizienter machen.
+
 \section{Programmierung}
 
 \subsection{Einleitung}
@@ -38,7 +40,7 @@ Jedes gro{\ss}e Bauteil bekommt eine Klasse zugewiesen. Die wichtigen Bauteile s
 
 \subsection{Simulation}
 Nach dem die Realisierung des praktischen Teils nicht erfolgreich war, wurde die Informatische Leistung auf eine Simulation in Javascript fokussiert, damit wenigstens die Programmierung präsentiert werden kann. Diese Simulation benutz P5.js, was eine Javascriptbibliothek ist. In dieser Simulation soll ein Auto in eine Parklücke, welche durch zwei Hindernisse begrenzt ist, einparken. Es gibt hier momentan eine Klasse für das Auto („Car“) und eine Klasse für die Hindernisse („Obstacle“). Das Hauptskript findet sich in der Datei „sketch.js“. Später würde man auch eine Klasse für die Intelligenz des Autos („Agent“) finden. Im jetzigen Zustand wird die Bewegung des Autos durch einen Geschwindigkeitsvektor und einen Beschleunigungsvektor simuliert. Außerdem wird die Ausrichtung des Autos durch die Ausrichtung des Geschwindigkeitsvektors bestimmt. In der aktuellen Version der Simulation ist der Lenkvorgang beim Einparken verfügbar, sodass für eine erste funktionsfähige Version nur noch Kollisionsdetektion und das Benutzen von Sensoren um Kollisionen zu verhindern fehlt.     
-\includegraphics{Bild_Simulation.png}
+\includegraphics[scale=0.5]{Bild_Simulation.png}
 
 \subsection{Dateistrukturen}
 
@@ -82,6 +84,14 @@ Im Rahmen der Dokumentation gab es immer wieder Schwierigkeiten, da man in LaTeX
 \subsubsection{Umgang mit Elektronik}
 
 \subsubsection{Messen}
+
+Wenn man eine Spannung messen will sollte man zuerst einmal das Multimeter in die Schaltung parallel einbauen und dann kann man die Spannung messen
+
+\includegraphics[scale=0.75]{3.png}
+
+Wenn man einen Strom messen will sollte man zuerst einmal das Multimeter in die Schaltung in Reihe einbauen somit kann man dann den Strom messen
+
+\includegraphics[scale=0.75]{2.png}
 
 \subsubsection{PWM}
 
@@ -128,17 +138,18 @@ Die Allgemeine Dynamik des Teams war rückblickend positiv. Jeder hat seinen Tei
 
 \chapter{Anhang}
 
+
 \section{Quellen}
 
 \subsection{Elektrotechnik}
 \begin{itemize}
 
-\item \url{http://cdn-reichelt.de/documents/datenblatt/A100/BC546_48-CDIL.pdf}
+\item \href{http://cdn-reichelt.de/documents/datenblatt/A100/BC546_48-CDIL.pdf}{Datenblatt : Transistor}
 
 
-\item \url{http://anleitung.joy-it.net/wp-content/uploads/2017/06/SBC-MotoDriver2-Anleitung.pdf}
+\item \href{http://anleitung.joy-it.net/wp-content/uploads/2017/06/SBC-MotoDriver2-Anleitung.pdf}{Anleitung H-Brücke}
 
-\item \url{http://cdn-reichelt.de/documents/datenblatt/A300/COM_MOTOR_RAD_DB-DE.pdf}
+\item \href{http://cdn-reichelt.de/documents/datenblatt/A300/COM_MOTOR_RAD_DB-DE.pdf}{Datenblatt : Motor}
 
 \end{itemize}
 
@@ -146,13 +157,11 @@ Die Allgemeine Dynamik des Teams war rückblickend positiv. Jeder hat seinen Tei
 
 \begin{itemize}
 
-\item \url{https://www.terraelectronica.ru/pdf/show?pdf_file=%252Fds%252Fpdf%252FT%252FTechicRP3.pdf}
+\item \href{http://www.netzmafia.de/skripten/hardware/RasPi/RasPi_GPIO_C.html}{Ansteuerung des Pis}
 
-\item \url{http://www.netzmafia.de/skripten/hardware/RasPi/RasPi_GPIO_C.html}
+\item \href{https://help.github.com/enterprise/2.14/user/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/}{ssh für Github auf dem Pi}
 
-\item \url{https://help.github.com/enterprise/2.14/user/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/}
-
-\item \url{https://devmarketer.io/learn/set-ssh-key-github/}
+\item \href{https://devmarketer.io/learn/set-ssh-key-github/}{ssh für Github auf dem Pi}
 
 \end{itemize}
 
@@ -160,13 +169,13 @@ Die Allgemeine Dynamik des Teams war rückblickend positiv. Jeder hat seinen Tei
 
 \begin{itemize}
 
-\item \url{http://cdn-reichelt.de/documents/datenblatt/A300/GRV_IR_DISTANCE_AL-EN.pdf}
+\item \href{http://cdn-reichelt.de/documents/datenblatt/A300/GRV_IR_DISTANCE_AL-EN.pdf}{Datenblatt / Anleitung : Abstandssensor}
 
-\item \url{http://www.mouser.com/catalog/specsheets/Seeed_101020022.pdf}
+\item \href{http://www.mouser.com/catalog/specsheets/Seeed_101020022.pdf}{Datenblatt / Anleitung : Helligkeitssensor}
 
-\item \url{https://github.com/DexterInd/GrovePi/blob/master/Hardware/GrovePi%2B%20v3.0.pdf}
+\item \href{https://github.com/DexterInd/GrovePi/blob/master/Hardware/GrovePi%2B%20v3.0.pdf}{Schaltplan GrovePi}
 
-\item \url{https://github.com/DexterInd/GrovePi/blob/master/Hardware/GrovePi%20Graphical%20Datasheet.jpg}
+\item \href{https://github.com/DexterInd/GrovePi/blob/master/Hardware/GrovePi%20Graphical%20Datasheet.jpg}{Blockschaltbild GrovePi}
 
 \end{itemize}
 
