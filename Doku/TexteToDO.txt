@@ -1,10 +1,10 @@
 Fachtexte zu:
 	Pi
 	GrovePi
-	H-Brücke
+	H-BrÃ¼cke
 	Motoren
 	Abstandssensor - Manuel
-	Helligkeitsensor
+	Helligkeitsensor - Robert
 	PWM
 	AD/DA Wandler
 	Spannungsteiler
