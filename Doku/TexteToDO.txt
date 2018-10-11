@@ -1,4 +1,4 @@
-Fachtexte zu:
+﻿Fachtexte zu:
 	Pi
 	GrovePi
 	H-Brücke - Salome
@@ -8,3 +8,8 @@ Fachtexte zu:
 	PWM
 	AD/DA Wandler
 	Spannungsteiler
+texte Zu
+
+Gelöste Probleme
+
+Ungelöste Probleme (hier ist schon etwas von Phillip)
