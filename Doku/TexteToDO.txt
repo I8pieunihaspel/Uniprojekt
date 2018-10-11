@@ -5,7 +5,7 @@
 	Motoren
 	Abstandssensor - Manuel
 	Helligkeitsensor - Robert
-	PWM
+	PWM - Manuel
 	AD/DA Wandler
 	Spannungsteiler
 texte Zu
