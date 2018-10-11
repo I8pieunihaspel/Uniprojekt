@@ -1,15 +1,17 @@
-\documentclass{report}
+\documentclass[notitlepage]{report}
 
 \usepackage{hyperref}
 \usepackage{graphicx}
-
 \author{Manuel Hinz}
 
 \title{Dokumentation des Unipraktikums}
 
 \begin{document}
-
 \maketitle
+\includegraphics[scale=1]{BKAH.png}
+
+
+\includegraphics[scale=0.75]{Uni.png}
 
 \tableofcontents
 \newpage
@@ -101,6 +103,14 @@ Wenn man einen Strom messen will sollte man zuerst einmal das Multimeter in die 
 
 \subsection{Schaltungen}
 
+\subsubsection{Grundkonzept}
+
+Die Schaltung für das Selbsteinparkende Auto beinhaltet de Pi + Groovepi, die acht Distanzsensoren(DS 1-8) , die vier Lichtsensoren(LS 1-4),die zwei H-Brücken, vier Motoren(M 1-4),eine Powerbank und zwei 9V Blöcke.
+
+Die Powerbank versorgt den Pi ,den Groovepi und die Sensoren mit dem nötigen Strom damit alles funktioniert, der Pi/Grovepi sendet ein Signal an die Inputs der H-Brücke welche von jeweils einem 9V Block versorgt werden und Außerdem auch die Motoren mit Strom versorgen welche von der H-Brücke auch gesteuert werden damit diese sich nach links oder rechts drehen.
+
+\includegraphics[scale=0.5]{1.png}
+
 \subsection{Messprotokolle}
 
 \subsubsection{H-Br\"{u}cken}
@@ -126,6 +136,11 @@ Die Messungen wurden von Phillip Schulz, Robert Grabarski, Manuel Hinz und Salom
 \subsection{Gel\"{o}ste Probleme}
 
 \subsection{Ungel\"{o}ste Probleme}
+
+\subsubsection{Ausgangssignal des Pis}
+
+Eines der Probleme welches wir mit dem Pi hatten war die Ansteuerung des Motors, da die Output Spannung von unserem Pi bei einem High Signal nur 3,3 mV Gleichspannung war welches nicht ausreicht um in dem uns Zugewiesen Zeitraum eine mit dieser Geringen Spannung Anständig funktionierende Schaltung zu bauen , aber dieses Problem ist eines welches bei unserem Model des Pi(3b)häufiger vorkommt zumindest laut mehren Foreneinträgen welche wir gefunden hatten , wo auch gesagt wurde das es keine Lösung für dieses Problem gäbe außer einen neuen Pi zu holen 
+
 
 \section{Teamdynamik}
 
