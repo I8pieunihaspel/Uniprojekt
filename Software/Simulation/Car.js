@@ -57,6 +57,11 @@ class Car{
       rect(-this.dimensions.x/2, -this.dimensions.y/2, this.dimensions.x, this.dimensions.y);
       fill("green");
       ellipse(0, 0, 10, 10);
+      fill("purple");
+      rect(-this.dimensions.x/1.25 - 2, this.dimensions.y/5, 10, 20);
+      rect(this.dimensions.x/1.25 - 8.2, this.dimensions.y/5, 10, 20); 
+      rect(-this.dimensions.x/1.7 - 8.2, -this.dimensions.y/2.4, 10, 20);
+      rect(this.dimensions.x/1.25 - 8.2, -this.dimensions.y/2.4, 10, 20);
       pop();
     }
   }
