@@ -1,4 +1,5 @@
 ﻿Fachtexte zu:
+	Umgang mit elektronischen Geräten
 	Pi
 	GrovePi
 	H-Brücke - Salome
@@ -7,7 +8,7 @@
 	Helligkeitsensor - Robert
 	PWM - Manuel
 	AD/DA Wandler
-	Spannungsteiler
+	Spannungsteiler - Manuel
 texte Zu
 
 Gelöste Probleme - Manuel

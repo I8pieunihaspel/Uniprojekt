@@ -102,6 +102,18 @@ PWM steht f\"{u}r PulsWeitenModulation bzw. Pulse-Width-Modulation. Diese wird z
 
 \subsubsection{Spannungsteiler}
 
+In der Elektrotechnik kommt es oft vor, dass man zu hohen Spannungen hat um ein Bauteil zu betreiben. Eine Methode die oft angewendet wird ist der Spannungsteiler. Hier gibt es zwei grundsätzlich unterschiedliche Methoden: den unbelasteten Spannungsteiler und den belasteten Spannungsteiler. 
+
+Bei dem unbelasteten Spannungsteiler sind einfach nur zwei Bauteile in Reihe geschaltet, wovon eins das Bauteil und eins ein Widerstand ist. Durch die normalen Formeln der Reihenschaltung kann man hier die Aufteilung der Spannung berechnen: $R1 = \frac{U_1}{U_2} * R_2$. 
+
+\includegraphics[scale=1]{Spannungsteiler_un.png}
+
+Bei dem belasteten Spannungsteiler wird ein weiterer Widerstand zu dem ersten parallelgeschaltet. Dadurch wird der Gesamtwiderstand der Schaltung kleiner, was zu einem größeren Gesamtstrom führt. Außerdem wird die Spannung am Bauteil größer und die Spannung an den parallelen Widerständen kleiner. 
+
+\includegraphics[scale=1]{Spannungsteiler_be.png}
+
+Diese Schaltungen können benutzt werden um bei anderen Bauteilen als Zwischenschritt zu dienen. Dies könnte zum Beispiel dafür dienen den Output vom Pi zu verringern bevor man die Spannung an eine H-Brücke legt. 
+
 \subsection{Schaltungen}
 
 \subsubsection{Grundkonzept}
