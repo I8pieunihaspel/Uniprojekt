@@ -2,7 +2,7 @@
 
 \usepackage{hyperref}
 \usepackage{graphicx}
-\author{Manuel Hinz}
+\author{Gruppe iAtePi}
 
 \title{Dokumentation des Unipraktikums}
 
@@ -13,14 +13,13 @@
 \includegraphics[scale=0.75]{Uni.png}
 
 \tableofcontents
-\newpage
 
 \chapter{Einleitung}
 
 \section{Motivation}
-Im Moment sind selbstfahrende Autos so ziemlich das technische Thema. Universit\"{a}ten rund um den Globus forschen an verschiedensten Technologien, welche das selbstfahrende Auto braucht. Ein Autohersteller nach dem anderen kauft entweder Startups zu dem Thema auf, oder investiert in eine eigene Forschungsabteilung. Als sich nun die M\"{o}glichkeit eines Praktikums im Rahmen des Elektrotechnikleistungskurses an der Bergischen Universit\"{a}t Wuppertal anbot, fiel die Wahl des Themas leicht. Das dieses Praktikum nicht nur eine gute M\"{o}glichkeit ist um den aktuellen Technischen Entwicklungen nachzueifern, zeigt sich schon an den verschiedenen Aufgaben die zu erledigen sind. Im Laufe des Projektes m\"{u}ssen n\"{a}mlich Motoren mithilfe von H-Br\"{u}cken und Pulsweitenmodulation gesteuert, ein Programm entworfen und ein Raspberrypi in Betrieb genommen werden. Neben dem technischen Wissen, was erlernt und angewendet werden muss (und sich praktischerweise relativ gut mit dem Abiturstoff deckt), wird hier auch ein Einblick in den Universit\"{a}tsalltag erlangt.  
+Im Moment sind selbstfahrende Autos so ziemlich das technische Thema. Universit\"{a}ten rund um den Globus forschen an verschiedensten Technologien, welche das selbstfahrende Auto braucht. Ein Autohersteller nach dem anderen kauft entweder Startups zu dem Thema auf, oder investiert in eine eigene Forschungs-abteilung. Als sich nun die M\"{o}glichkeit eines Praktikums im Rahmen des Elektrotechnikleistungskurses an der Bergischen Universit\"{a}t Wuppertal anbot, fiel die Wahl des Themas leicht. Das dieses Praktikum nicht nur eine gute M\"{o}glichkeit ist um den aktuellen technischen Entwicklungen nachzueifern, zeigt sich schon an den verschiedenen Aufgaben die zu erledigen sind. Im Laufe des Projektes m\"{u}ssen n\"{a}mlich Motoren mithilfe von H-Br\"{u}cken und Pulsweitenmodulation gesteuert, ein Programm entworfen und ein Raspberrypi in Betrieb genommen werden. Neben dem technischen Wissen, was erlernt und angewendet werden muss (und sich praktischerweise relativ gut mit dem Abiturstoff deckt), wird hier auch ein Einblick in den Universit\"{a}tsalltag erlangt.  
 \section{Zielsetzung}
-Es gibt viele m\"{o}gliche Aufgaben, die man im Rahmen des Themas l\"{o}sen k\"{o}nnte. Besonders interessant sind hier vor allem das finden von einem und das einparken auf einem Parkplatz, sowie das Teilnehmen am Stra{\ss}enverkehr. Letzteres entf\"{a}llt wegen der Schwierigkeit des Simulierens von anderem Verkehr. Deshalb ist die hier gew\"{a}hlte Aufgabe das finden und befahren einer Parkl\"{u}cke in einem stra{\ss}en\"{a}hnlichen Setting. Genauer gesagt wird das Auto eine Strecke entlangfahren und mit Hilfe von Sensoren eine Parkl\"{u}cke in die es hineinpasst identifizieren und dann dort einparken. Dies wird innerhalb von 16 90-min\"{u}tigen Einheiten \"{u}ber einen Zeitraum von sieben Wochen. Ein weiteres Ziel ist es das f\"{u}r die Vollendung des Projektes n\"{o}tige Wissen f\"{u}r alle Gruppenmitglieder verst\"{a}ndlich zu bearbeiten und die Gruppe damit f\"{u}r das Abitur und weitere Projekte vorzubereiten.
+Es gibt viele m\"{o}gliche Aufgaben, die man im Rahmen des Themas l\"{o}sen k\"{o}nnte. Besonders interessant sind hier vor allem das finden von einem und das Einparken auf einem Parkplatz, sowie das Teilnehmen am Stra{\ss}enverkehr. Letzteres entf\"{a}llt wegen der Schwierigkeit des Simulierens von anderem Verkehr. Deshalb ist die hier gew\"{a}hlte Aufgabe das finden und befahren einer Parkl\"{u}cke in einem Stra{\ss}en\"{a}hnlichen Setting. Genauer gesagt wird das Auto eine Strecke entlangfahren und mit Hilfe von Sensoren eine Parkl\"{u}cke in die es hineinpasst identifizieren und dann dort einparken. Dies wird innerhalb von 16 Einheiten \"{u}ber einen Zeitraum von sieben Wochen passieren. Ein weiteres Ziel ist es das f\"{u}r die Vollendung des Projektes n\"{o}tige Wissen f\"{u}r alle Gruppenmitglieder verst\"{a}ndlich zu bearbeiten und die Gruppe damit f\"{u}r das Abitur vorzubereiten.
 
 \chapter{Plannung}
 
@@ -31,24 +30,24 @@ Wenn man das Projekt Zuk\"{u}nftig fertigstellen w\"{u}rde, k\"{o}nnte man einig
 \section{Programmierung}
 
 \subsection{Einleitung}
-Bei der Programmierung des Projekts wurde ein objektorientierter L\"{o}sungsansatz gew\"{a}hlt. Dies wurde einerseits wegen der Thematisierung der Objekt-Orientierten-Programmierung (OOP) im Informatikunterricht und andererseits wegen dem einfachen Bezug dem man hier zwischen realen Objekten (Sensor, Motor) und zugeh\"{o}rigen Klassen herstellen kann gewählt. Au{\ss}erdem ist die OOP einer der Paradigmen, welche in der Realit\"{a}t benutzt werden. 
+Bei der Programmierung des Projekts wurde ein objektorientierter L\"{o}sungsansatz gew\"{a}hlt. Dies wurde einerseits wegen der Thematisierung der Objekt-Orientierten-Programmierung (OOP) im Informatikunterricht und andererseits wegen dem einfachen Bezug dem man hier zwischen realen Objekten (Sensor, Motor) und zugeh\"{o}rigen Klassen herstellen kann gew\"{a}hlt. Au{\ss}erdem ist die OOP einer der Paradigmen, welche in der Realit\"{a}t benutzt werden. 
 
 \subsection{Python}
-Als Programmiersprache wurde Python gew\"{a}hlt, da  diese Sprache im Informatikunterricht verwendet wird, sie f\"{u}r Laien leicht verst\"{a}ndlich ist und mehrere Personen in der Gruppe bzw. dem nahen Umfeld haben, welche diese Sprache bereits gut k\"{o}nnen. Au{\ss}erdem unterst\"{u}tzt Python die OOP, wodurch die Sprache auch unsere Paradigmenwahl zul\"{a}sst. Da sie eine beliebte und weitverbreitete Sprache ist unterst\"{u}tzt sowohl das aktuelle Image das auf dem Pi ist, als auch der Hersteller unsere Sensoren die Sprache. Auch kann man sagen, dass die Sprachwahl es uns erm\"{o}glicht Code, welcher schon fr\"s{u}her von einzelnen Mitgliedern geschrieben wurde, wieder zu benutzen.  Ein Nachteil ist hier, dass Python nicht alle Konzepte der OOP unterst\"{u}tzt (zum Beispiel Abstrakte Klassen, Interfaces/Traits).
+Als Programmiersprache wurde Python gew\"{a}hlt, da  diese Sprache im Informatikunterricht verwendet wird, sie f\"{u}r Laien leicht verst\"{a}ndlich ist und mehrere Personen in der Gruppe bzw. dem nahen Umfeld haben, welche diese Sprache bereits gut k\"{o}nnen. Au{\ss}erdem unterst\"{u}tzt Python die OOP, wodurch die Sprache auch die Paradigmenwahl zul\"{a}sst. Da sie eine beliebte und weitverbreitete Sprache ist unterst\"{u}tzt sowohl das aktuelle Image das auf dem Pi ist, als auch der Hersteller der Sensoren die Sprache. Auch kann man sagen, dass die Sprachwahl es  erm\"{o}glicht Code, welcher schon fr\"s{u}her von einzelnen Mitgliedern geschrieben wurde, wieder zu benutzen.  Ein Nachteil ist hier, dass Python nicht alle Konzepte der OOP unterst\"{u}tzt (zum Beispiel Abstrakte Klassen, Interfaces/Traits).
 
 \subsection{Programmstruktur}
 Jedes gro{\ss}e Bauteil bekommt eine Klasse zugewiesen. Die wichtigen Bauteile sind hier: die Sensoren, die Motoren, die Motortreiber und der Raspberrypi. F\"{u}r die Sensoren gibt es drei Klassen: Einmal eine abstrakte Klasse Sensor, welche definiert, dass jeder Sensor ein Signal auslesen(get\_value) und die Bezeichnung des Pins ausgeben(get\_location) kann. Es gibt  zwei Klassen, namentlich LightSensor und DistanceSensor, welche von Sensor erben, und jeweils die Methode zum Signalauslesen, sowie den Konstruktor \"{u}berschreiben.
 
 \subsection{Simulation}
 Nach dem die Realisierung des praktischen Teils nicht erfolgreich war, wurde die Informatische Leistung auf eine Simulation in Javascript fokussiert, damit wenigstens die Programmierung pr\"{a}sentiert werden kann. Diese Simulation benutz P5.js, was eine Javascriptbibliothek ist. In dieser Simulation soll ein Auto in eine Parkl\"{u}cke, welche durch zwei Hindernisse begrenzt ist, einparken. Es gibt hier momentan eine Klasse f\"{u}r das Auto („Car“) und eine Klasse f\"{u}r die Hindernisse („Obstacle“). Das Hauptskript findet sich in der Datei „sketch.js“. Sp\"{a}ter w\"{u}rde man auch eine Klasse f\"{u}r die Intelligenz des Autos („Agent“) finden. Im jetzigen Zustand wird die Bewegung des Autos durch einen Geschwindigkeitsvektor und einen Beschleunigungsvektor simuliert. Au{\ss}erdem wird die Ausrichtung des Autos durch die Ausrichtung des Geschwindigkeitsvektors bestimmt. In der aktuellen Version der Simulation ist der Lenkvorgang beim Einparken verf\"{u}gbar, sodass f\"{u}r eine erste funktionsf\"{a}hige Version nur noch Kollisionsdetektion und das Benutzen von Sensoren um Kollisionen zu verhindern fehlt.     
-\includegraphics[scale=0.5]{Bild_Simulation.png}
+\includegraphics[scale=0.75]{Bild_Simulation.png}
 
 \subsection{Dateistrukturen}
 
 \includegraphics{Struktur.png}
 Alle Dateien wurden auf Github hochgeladen. Die Struktur, welche gew\"{a}hlt wurde ist im obigen Bild dargestellt und in diesem Text genauer erl\"{a}utert. 
-Der erste Unterordner tr\"{a}gt den Namen „Doku“. In diesem werden alle Dateien f\"{u}r die Dokumentation gespeichert, der Ordner ist jedoch noch mal in vier Unterordner unterteilt. Diese Ordner sind: erstens „Abgabe“, in welchem alle Dateien f\"{u}r diese Dokumentation zu finden sind, zweitens „Grundwissen“, in welchem Dateien sind, die alle in der Gruppe bef\"{a}higen sollen, jede Aufgabe eigenst\"{a}ndig zu l\"{o}sen, drittens „Quellen“, in welchem alle unsere Quellen aufgef\"{u}hrt sind und viertens „Tagesdokus“, in welchem alle Tagesdokumentationen sind.
-Der zweiter Unterordner „Hardware“ enth\"{a}lt Datenbl\"{a}tter und Messungen in jeweils einem eigenen Unterordner. Es ist hier anzumerken, dass nicht alle Bauteile ein Datenblatt und Messungen haben.
+Der erste Unterordner tr\"{a}gt den Namen „Doku“. In diesem werden alle Dateien f\"{u}r die Dokumentation gespeichert, der Ordner ist jedoch noch mal in vier Unterordner unterteilt. Diese Ordner sind: erstens „Abgabe“, in welchem alle Dateien f\"{u}r diese Dokumentation zu finden sind, zweitens „Grundwissen“, in welchem Dateien sind, die alle in der Gruppe bef\"{a}higen sollen, jede Aufgabe eigenst\"{a}ndig zu l\"{o}sen, drittens „Quellen“, in welchem alle Quellen aufgef\"{u}hrt sind und viertens „Tagesdokus“, in welchem alle Tagesdokumentationen sind.
+Der zweiter Unterordner „Hardware“ enth\"{a}lt Datenbl\"{a}tter und Messungen in jeweils einem eigenen Unterordner. Es ist hier anzumerken, dass nicht alle Bauteile ein Datenblatt und Mes75sungen haben.
 Der Unterordner „Software“ beinhaltet alle eigenen Programme und Skripte. Alle Dateien wurden in die Ordner „Endprogramm“, „Simulation“, „Testen“ und „Tools“ einsortiert. Der Ordner „Endprogramm“ sollte das Programm, was am Ende auf dem Pi l\"{a}uft, beherbergen. Das w\"{a}ren, im Falle Fertigstellung des Programmes, eine Datei pro Klassengruppe.  Alles was im Unterordner „Simulation“ befindet ist f\"{u}r die Simulation, welche Html und Javascript benutzt. In dem Ordner „Test“ befindet sich Python-Skripte, welche w\"{a}hrend der Entwicklung des Autos zum Testen einzelner Funktionen (wie z.B. der Reichweite der Abstandssensoren) benutzt werden.
 Der Ordner „Regeln“ beinhaltet Dateien, welche Regeln festhalten, die die Zusammenarbeit in der Gruppe erleichtern sollen. Der Ordner Pr\"{a}sentation beinhaltet unterschiedliche Versionen der Pr\"{a}sentation. Im Ordner „Zeitplan“ befindet sich immer der aktuelle Zeitplan samt Anwesenheitsliste.  Alle Fotos sind in dem Ordner „Photos“ um die Dokumentation und die Pr\"{a}sentation zu vervollst\"{a}ndigen. 
 Durch diese Struktur sollen Dateien immer leicht zu finden sein. Au{\ss}erdem wird durch diese Struktur die Abgrenzung von einzelnen Aufgabengebieten einfacher, wodurch sich alle Beteiligten leicht in jede Unteraufgabe eindenken k\"{o}nnen sollen. 
@@ -58,7 +57,7 @@ Durch diese Struktur sollen Dateien immer leicht zu finden sein. Au{\ss}erdem wi
 
 \subsection{Github}
 
-Die Gruppe benutzt Github als unser Versionskontrollsystem. Github bietet sich hier an, weil einerseits git auf dem Raspberrypi ist, wodurch man immer die aktuellste Version des Programmes auf dem Pi haben k\"{o}nnen. Au{\ss}erdem erleichtert Github das gleichzeitige Arbeiten, sodass mehrere Leute gleichzeitig programmieren, und die Programme schlussendlich hochladen k\"{o}nnen. Ein weiteres Plus ist, dass Github eine gro{\ss}e Anzahl an letzten Versionen speichert, wodurch auch sp\"{a}t erkannte Fehler leicht \"{u}berwunden werden k\"{o}nnen. Als letztes Argument f\"{u}r diese Technologie ist zu sagen, dass sie quasi als Dokumentation f\"{u}r alles was auf Github hochgeladen wird dienen kann. Da man jeden Schritt nachvollziehen kann. 
+Die Gruppe benutzt Github als Versionskontrollsystem. Github bietet sich hier an, weil einerseits git auf dem Raspberrypi ist, wodurch man immer die aktuellste Version des Programmes auf dem Pi haben k\"{o}nnen. Au{\ss}erdem erleichtert Github das gleichzeitige Arbeiten, sodass mehrere Leute gleichzeitig programmieren, und die Programme schlussendlich hochladen k\"{o}nnen. Ein weiteres Plus ist, dass Github eine gro{\ss}e Anzahl an letzten Versionen speichert, wodurch auch sp\"{a}t erkannte Fehler leicht \"{u}berwunden werden k\"{o}nnen. Als letztes Argument f\"{u}r diese Technologie ist zu sagen, dass sie quasi als Dokumentation f\"{u}r alles was auf Github hochgeladen wird dienen kann. Da man jeden Schritt nachvollziehen kann. 
 
 \subsection{Slack}
 
@@ -68,7 +67,7 @@ Slack ist generell eine Kommunikations Software f\"{u}r Unterhaltung. Es k\"{o}n
 
 \subsubsection{Benutzung}
 
-Unsere Gruppe benutzte Anfangs Slack f\"{u}r Dateienspeicherung und Kommunikation. Mittlerweile wird auf Slack nur noch kommuniziert. Jedoch werden die wichtigeren Dateien und generelle Textdokumente auf Github hochgeladen. Da Slack sowie Github als App herunterladbar sind werden  diese auch mobil genutzt, um wenn man unterwegs ist auf dem neusten Stand zu sein. 
+Diese Gruppe benutzte Anfangs Slack f\"{u}r Dateienspeicherung und Kommunikation. Mittlerweile wird auf Slack nur noch kommuniziert. Jedoch werden die wichtigeren Dateien und generelle Textdokumente auf Github hochgeladen. Da Slack sowie Github als App herunterladbar sind werden  diese auch mobil genutzt, um wenn man unterwegs ist auf dem neusten Stand zu sein. 
 
 \subsection{\LaTeX}
 
@@ -76,13 +75,15 @@ F\"{u}r die Tagesdokumentationen und die Hauptdokumentation wird LaTeX verwendet
 
 \subsection{Hilfsprogramm}
 
-Im Rahmen der Dokumentation gab es immer wieder Schwierigkeiten, da man in LaTeX einige Zeichen nicht einfach so schreiben darf, wenn sie entweder nicht von der Kodierung unterst\"{u}tzt werden (Beispiel: \"{a}, \"{U}) oder schon eine Andere Belegung haben (Bsp.: \_). Damit das schreiben der Dokumentation m\"{o}glichst schnell passiert wurde deshalb von uns ein Skript geschrieben, welches alle diese problematischen Zeichen durch die LaTeX-Schreibweise ersetzt. Das Skript ist hier jedoch nur eine tempor\"{a}re L\"{o}sung, weshalb man zum Beispiel den Pfad der Latex Datei nicht an das Skript weitergibt, sondern den Pfad innerhalb einer Variablen des Skriptes schreibt.
+Im Rahmen der Dokumentation gab es immer wieder Schwierigkeiten, da man in LaTeX einige Zeichen nicht einfach so schreiben darf, wenn sie entweder nicht von der Kodierung unterst\"{u}tzt werden (Beispiel: \"{a}, \"{U}) oder schon eine Andere Belegung haben (Bsp.: \_). Damit das schreiben der Dokumentation m\"{o}glichst schnell passiert wurde deshalb von ein Skript geschrieben, welches alle diese problematischen Zeichen durch die LaTeX-Schreibweise ersetzt. Das Skript ist hier jedoch nur eine tempor\"{a}re L\"{o}sung, weshalb man zum Beispiel den Pfad der Latex Datei nicht an das Skript weitergibt, sondern den Pfad innerhalb einer Variablen des Skriptes schreibt.
 
 \section{Elektrotechnik}
 
 \subsection{Grundlagen}
 
 \subsubsection{Umgang mit Elektronik}
+
+Hier w\"{u}rde ein Text stehen, w\"{a}re er abgegeben worden.
 
 \subsubsection{Messen}
 
@@ -102,17 +103,34 @@ PWM steht f\"{u}r PulsWeitenModulation bzw. Pulse-Width-Modulation. Diese wird z
 
 \subsubsection{Spannungsteiler}
 
-In der Elektrotechnik kommt es oft vor, dass man zu hohen Spannungen hat um ein Bauteil zu betreiben. Eine Methode die oft angewendet wird ist der Spannungsteiler. Hier gibt es zwei grundsätzlich unterschiedliche Methoden: den unbelasteten Spannungsteiler und den belasteten Spannungsteiler. 
+In der Elektrotechnik kommt es oft vor, dass man zu hohen Spannungen hat um ein Bauteil zu betreiben. Eine Methode die oft angewendet wird ist der Spannungsteiler. Hier gibt es zwei grunds\"{a}tzlich unterschiedliche Methoden: den unbelasteten Spannungsteiler und den belasteten Spannungsteiler. 
 
 Bei dem unbelasteten Spannungsteiler sind einfach nur zwei Bauteile in Reihe geschaltet, wovon eins das Bauteil und eins ein Widerstand ist. Durch die normalen Formeln der Reihenschaltung kann man hier die Aufteilung der Spannung berechnen: $R1 = \frac{U_1}{U_2} * R_2$. 
 
 \includegraphics[scale=1]{Spannungsteiler_un.png}
 
-Bei dem belasteten Spannungsteiler wird ein weiterer Widerstand zu dem ersten parallelgeschaltet. Dadurch wird der Gesamtwiderstand der Schaltung kleiner, was zu einem größeren Gesamtstrom führt. Außerdem wird die Spannung am Bauteil größer und die Spannung an den parallelen Widerständen kleiner. 
+Bei dem belasteten Spannungsteiler wird ein weiterer Widerstand zu dem ersten parallelgeschaltet. Dadurch wird der Gesamtwiderstand der Schaltung kleiner, was zu einem gr\"{o}{\ss}eren Gesamtstrom f\"{u}hrt. Au{\ss}erdem wird die Spannung am Bauteil gr\"{o}{\ss}er und die Spannung an den parallelen Widerst\"{a}nden kleiner. 
 
 \includegraphics[scale=1]{Spannungsteiler_be.png}
 
-Diese Schaltungen können benutzt werden um bei anderen Bauteilen als Zwischenschritt zu dienen. Dies könnte zum Beispiel dafür dienen den Output vom Pi zu verringern bevor man die Spannung an eine H-Brücke legt. 
+Diese Schaltungen k\"{o}nnen benutzt werden um bei anderen Bauteilen als Zwischenschritt zu dienen. Dies k\"{o}nnte zum Beispiel daf\"{u}r dienen den Output vom Pi zu verringern bevor man die Spannung an eine H-Br\"{u}cke legt. 
+
+\subsubsection{H-Br\"{u}cke}
+
+Hier h\"{a}tte ein nicht abgegebener Text gestanden.
+
+\subsubsection{Abstandssensor}
+
+Um das Projekt richtig umsetzen zu k\"{o}nnen, werden Abstandssensoren gebraucht um den Aufprall von dem Auto auf Hindernisse zu vermeiden. F\"{u}r diese Projekt wurden die Abstandssensoren die zu dem GrovePi passen ausgew\"{a}hlt. Im Folgenden soll die Funktionsweise von den Abstandssensor erl\"{a}utert werden.
+ Diese Sensoren m\"{u}ssen eingestellt werden, bevor man sie benutzen kann. Im Idealfall w\"{u}rde man diese Einstellung der Sensoren vor jeder Messung machen. Bei den hier gew\"{a}hlten Sensoren ist es jedoch nur m\"{o}glich sie vor jeder Fahrt einzustellen. Dies sollte jedoch kein Problem sein, da das Auto hier mit relativ gleichbleibenden Bedingungen zu tun hat.  
+Um die Distanz einsch\"{a}tzen zu k\"{o}nnen sendet der Lichtsensor konstant Infrarotlicht aus und misst dann die Helligkeit. Diese Helligkeit wird dann je nach Einstellung verringert und als Spannung ausgegeben. Das Potentiometer, welches zum Einstellen eines Nullzustandes dient, ist hier ein Spannungsteiler. Dies ist auch der Grund warum man im Idealfall vor jeder Messung eine Einstellung vornimmt.
+Es ist hier erw\"{a}hnenswert, dass die Intensit\"{a}t des Lichtes, welches von dem Sensor selbst geschickt wird, proportional zu dem inversen Quadrat der Distanz, die zur\"{u}ckgelegt worden ist, ist. Deshalb ist bei gleich gro{\ss}en \"{A}nderungen des Ausgangssignals nicht unbedingt mit einer gleichen \"{A}nderung der Distanz zu rechnen.  
+Die Probleme bei den hier gew\"{a}hlten Sensoren liegt an zwei Stellen.: Erstens kann man das Potentiometer nicht so einstellen, dass man genug Helligkeit entnimmt um das Licht des Sensors registrieren zu k\"{o}nnen und zweitens gibt es bei dieses Sensoren keinen Filter der andere Wellenl\"{a}gen herrausfiltert.
+
+
+\subsubsection{Lichsensor}
+
+Ein weiteres n\"{o}tiges Objekt f\"{u}r das Projekt war der Lichtsensor. Der Lichtsensor braucht eine Spannung im Idealsten Fall von mindestens 3 bis maximal 5 n Volt. Der Versorgungsstrom liegt bei minimal 0.5 bis maximal 3 mA. Die Reaktionszeit des Sensors dauert zwischen 20-30 Sekunden und die Betriebstemperatur liegt bei -30 bis 70 Grad.  Bei Licht entsteht ein Widerstand von 20 Kilo Ohm und bei Dunkelheit 1 Mega Ohm. In dem Projekt werden Lichtsensoren benutzt indem sie an den Grovepi angeschlossen sind und das Programm diese selbst justiert. Sie werden ben\"{o}tigt um Dunkle und Helle Oberfl\"{a}chen zu erkennen um sie als farbliche \"{A}nderung zu identifizieren. 
 
 \subsection{Schaltungen}
 
@@ -127,7 +145,7 @@ Die Powerbank versorgt den Pi ,den Groovepi und die Sensoren mit dem n\"{o}tigen
 \subsection{Messprotokolle}
 
 \subsubsection{H-Br\"{u}cken}
-Die Messungen wurden von Murat Mete und Salome Richartz durchgef\"{u}hrt. Genutzt wurden zwei H-Br\"{u}cken, vier Motoren, ein Labornetzger\"{a}t, ein Multimeter, ein Steckbrett und mehrere Leitungen. Damit es uns sp\"{a}ter gelang den Motor anzusteuern, wurde von Pluspol, welcher 9 Volt lieferte, eine externe Leitung gelegt. Daraufhin wurde die H-Br\"{u}cke an die Spannungsversorgung angeschlossen, und diese an einen Motor. Um den Motor anzusteuern wurde die Leitung, die vorher abgezweigt wurde an einem den zug\"{a}nglichen Pins, der H-Br\"{u}cke, angeschlossen, um ein Signal von einem Microcontroller zu simulieren. Der Strom wurde direkt am Motor gemessen, wo schlie{\ss}lich das Multimeter zum Einsatz kam.
+Die Messungen wurden von Murat Mete und Salome Richartz durchgef\"{u}hrt. Genutzt wurden zwei H-Br\"{u}cken, vier Motoren, ein Labornetzger\"{a}t, ein Multimeter, ein Steckbrett und mehrere Leitungen. Damit es  sp\"{a}ter gelang den Motor anzusteuern, wurde von dem Pluspol, welcher 9 Volt lieferte, eine externe Leitung gelegt. Daraufhin wurde die H-Br\"{u}cke an die Spannungsversorgung angeschlossen, und diese an einen Motor. Um den Motor anzusteuern wurde die Leitung, die vorher abgezweigt wurde an einem den zug\"{a}nglichen Pins, der H-Br\"{u}cke, angeschlossen, um ein Signal von einem Microcontroller zu simulieren. Der Strom wurde direkt am Motor gemessen, wo schlie{\ss}lich das Multimeter zum Einsatz kam.
 
 \subsubsection{Motoren}
 
@@ -135,11 +153,11 @@ Die Messungen wurden von Murat Mete und Salome Richartz durchgef\"{u}hrt. Genutz
 
 \subsubsection{Abstandssensoren}
 
-Die Messungen wurden von Phillip Schulz, Robert Grabarski, Manuel Hinz und Salome Richartz durchgef\"{u}hrt. Genutzt wurden ein Raspberry Pi 3 Model B, Abstandssensoren der Marke GroovePi, ein Schraubenzieher und ein Laptop. Es wurde ein Programm geschrieben, welches eine Nachricht ausgibt, ob der Sensor etwas gefunden hat oder nicht. Der Sensor wurde an den Raspberry Pi angeschlossen und das Programm wurde gestartet. Sobald der  Sensor uns ein “nicht gefunden” zur\"{u}ckgegeben hat, wurde die Sensibilit\"{a}t des Sensors mithilfe des Schraubenziehers (auf dem Sensor befindet sich ein Potentiometer, welches sich mit dem Schraubenzieher verstellen l\"{a}sst) auf unsere W\"{u}nsche eingestellt.
+Die Messungen wurden von Phillip Schulz, Robert Grabarski, Manuel Hinz und Salome Richartz durchgef\"{u}hrt. Genutzt wurden ein Raspberry Pi 3 Model B, Abstandssensoren der Marke GroovePi, ein Schraubenzieher und ein Laptop. Es wurde ein Programm geschrieben, welches eine Nachricht ausgibt, ob der Sensor etwas gefunden hat oder nicht. Der Sensor wurde an den Raspberry Pi angeschlossen und das Programm wurde gestartet. Nun wurde der Sensor auf eine dunkle Ecke gerichtet und es wurde so lange an dem Potentiometer gedreht bis sich das Programm mit "nichts gefunden" meldete.
 
 \subsubsection{Lichtsensoren}
 
-Die Messungen wurden von Phillip Schulz, Robert Grabarski, Manuel Hinz und Salome Richartz durchgef\"{u}hrt. Genutzt wurden ein Raspberry Pi 3 Model B, Lichtsensoren der Marke GroovePi und ein Laptop. Es wurde ein Programm geschrieben, welches uns den gemessenen Helligkeitswert in einem passenden Format zur\"{u}ckgibt. Der Sensor wurde unterschiedlichen Helligkeitssituationen ausgesetzt und die Werte verglichen.
+Die Messungen wurden von Phillip Schulz, Robert Grabarski, Manuel Hinz und Salome Richartz durchgef\"{u}hrt. Genutzt wurden ein Raspberry Pi 3 Model B, Lichtsensoren der Marke GroovePi und ein Laptop. Es wurde ein Programm geschrieben, welches den gemessenen Helligkeitswert in einem passenden Format zur\"{u}ckgibt. Der Sensor wurde unterschiedlichen Helligkeitssituationen ausgesetzt und die Werte verglichen.
 
 
 \chapter{Realisierung}
@@ -148,18 +166,18 @@ Die Messungen wurden von Phillip Schulz, Robert Grabarski, Manuel Hinz und Salom
 
 \subsection{Gel\"{o}ste Probleme}
 
-Im Rahmen des Projektes mussten einige Probleme \"{u}berwunden werden. Das erste Problem war die Inbetriebnahme und Ansteuerung des Pis, da vor Ort kein Netzwerk war mit welchem man sich h\"{a}tte verbinden k\"{o}nnen. Dies ist ein Problem, da alles was auf dem Pi passierte durch VNC geschah. Doch damit man VNC benutzen kann m\"{u}ssen das Ger\"{a}t auf das man zugreifen will und das Ger\"{a}t von welchem man agieren will im gleichen Netzwerk sein. Dieses Problem wurde durch das benutzen von privatem Datenvolumen aus den jeweiligen Handyvetr\"{a}gen gel\"{o}st. Ein weiteres Problem trat bei der Inbetriebnahme der Sensoren auf, als sich die Distanzsensoren nicht richtig kalibrieren lie{\ss}en, weil die St\"{o}rsignale (das Licht im Raum) zu gro{\ss} bzw. hell waren. Dieses Problem lie{\ss} sich nicht direkt l\"{o}sen, au{\ss}er durch eine Verlegung des Ortes. Der Flur war hier schon dunkel genug, so dass man dieses Problem zu mindestens bei einer Pr\"{a}sentation h\"{a}tte umgehen k\"{o}nnen. Doch es gab noch mehr Probleme mit diesen Sensoren, da sie scheinbar nicht zu kalibrieren waren. Das konnte jedoch sp\"{a}ter wiederlegt werden als festgestellt wurde, dass man nur den Pi nach jedem Kalibrieren neustarten sollte. Ein weiteres Problem war das Ansteuern von Pins des Pis und des GrovePis, da es hier viele widerspr\"{u}chlicher Informationen im Internet gab. Nach viel Arbeit konnten jedoch die passendend Datenbl\"{a}tter gefunden werden. 
+Im Rahmen des Projektes mussten einige Probleme \"{u}berwunden werden. Das erste Problem war die Inbetriebnahme und Ansteuerung des Pis, da vor Ort kein Netzwerk war mit welchem man sich h\"{a}tte verbinden k\"{o}nnen. Dies ist ein Problem, da alles was auf dem Pi passierte durch VNC geschah. Doch damit man VNC benutzen kann m\"{u}ssen das Ger\"{a}t auf das man zugreifen will und das Ger\"{a}t von welchem man agieren will im gleichen Netzwerk sein. Dieses Problem wurde durch das benutzen von privatem Datenvolumen aus den jeweiligen Handyvetr\"{a}gen gel\"{o}st. Ein weiteres Problem trat bei der Inbetriebnahme der Sensoren auf, als sich die Distanzsensoren nicht richtig kalibrieren lie{\ss}en, weil die St\"{o}rsignale (das Licht im Raum) zu gro{\ss} bzw. hell waren. Dieses Problem lie{\ss} sich nicht direkt l\"{o}sen, au{\ss}er durch eine Verlegung des Ortes. Der Flur war hier schon dunkel genug, so dass man dieses Problem zu mindestens bei einer Pr\"{a}sentation h\"{a}tte umgehen k\"{o}nnen. Doch es gab noch mehr Probleme mit diesen Sensoren, da sie scheinbar nicht zu kalibrieren waren. Das konnte jedoch sp\"{a}ter wiederlegt werden als festgestellt wurde, dass man nur den Pi nach jedem Kalibrieren neustarten sollte. Ein weiteres Problem war das Ansteuern von Pins des Pis und des GrovePis, da es hier viele widerspr\"{u}chlicher Informationen im Internet gab. Nach viel Arbeit konnten jedoch die passendend Datenbl\"{a}tter gefunden werden. Ein weiteres Problem kam bei der Inberiebnahme des Pi`s der anderen Gruppe auf. Hier war das Problem, dass das Image, welches auf die SDkarte geflasht wurde, nicht akutell genug war. Dies konnte durch das Hertunterladen eines neueren Images gel\"{o}st werden.
 
 \subsection{Ungel\"{o}ste Probleme}
 
 \subsubsection{Ausgangssignal des Pis}
 
-Eines der Probleme welches mit dem Pi aufkam war die Ansteuerung des Motors, da die Output Spannung von unserem Pi bei einem High Signal nur 3,3 mV Gleichspannung war welches nicht ausreicht um in dem uns Zugewiesen Zeitraum eine mit dieser Geringen Spannung Anst\"{a}ndig funktionierende Schaltung zu bauen , aber dieses Problem ist eines welches bei unserem Model des Pi(3b)h\"{a}ufiger vorkommt zumindest laut mehren Foreneintr\"{a}gen welche  gefunden wurden , wo auch gesagt wurde das es keine L\"{o}sung f\"{u}r dieses Problem g\"{a}be au{\ss}er einen neuen Pi zu holen 
+Eines der Probleme welches mit dem Pi aufkam war die Ansteuerung des Motors, da die Output Spannung von dem Pi bei einem High Signal nur 3,3 mV Gleichspannung war welches nicht ausreicht um in dem zugewiesen Zeitraum eine mit dieser Geringen Spannung Anst\"{a}ndig funktionierende Schaltung zu bauen , aber dieses Problem ist eines welches bei dem Model des Pi(3b)h\"{a}ufiger vorkommt zumindest laut mehren Foreneintr\"{a}gen welche  gefunden wurden , wo auch gesagt wurde das es keine L\"{o}sung f\"{u}r dieses Problem g\"{a}be au{\ss}er einen neuen Pi zu holen 
 
 
 \section{Teamdynamik}
 
-Am Anfang ergab sich die Problematik, da unsere Gruppe nur aus f\"{u}nf Individuen bestand, dass kein Teamleiter ernennen werden  konnte. Darum hat sich die Gruppe entschlossen, einzelne Teilverantwortliche zu ernennen. Diese waren f\"{u}r einen bestimmten Bereich verantwortlich, mussten jedoch diesen nicht alleine bearbeiten, denn sie waren dazu bef\"{a}higt ein anderes Teammitglied, welches zu diesem Zeitpunkt keine Arbeit hatte oder einen Leerlauf, f\"{u}r bestimmte Aufgaben heranzuziehen.
+Am Anfang ergab sich die Problematik, da diese Gruppe nur aus f\"{u}nf Individuen bestand, dass keine Teamleiter ernennen werden  konnten. Darum hat sich die Gruppe entschlossen, einzelne Teilverantwortliche zu ernennen. Diese waren f\"{u}r einen bestimmten Bereich verantwortlich, mussten jedoch diesen nicht alleine bearbeiten, denn sie waren dazu bef\"{a}higt ein anderes Teammitglied, welches zu diesem Zeitpunkt keine Arbeit hatte oder einen Leerlauf, f\"{u}r bestimmte Aufgaben heranzuziehen.
 Somit ergab sich eine stetige Kommunikation innerhalb der Gruppe, den trotz der Hauptverantwortung des einzelnen musste dieser nicht ein Experte in diesem Bereich sein, mithilfe des Informationsaustausches.
 Es ergaben sich jedoch auch einige Probleme durch diese Art der Aufgabenverteilung. Ein Mitglied der Gruppe war Aufgrund einer Krankheit die ersten 4 Termine nicht anwesend und musste innerhalb eines Termines auf den aktuellen Stand des Projektes gebracht werden. Dies konnte man jedoch nicht verhindern. Ein anderes Problem war die schwindende oder keinerlei vorhandene Motivation einzelner Individuen, die jedoch f\"{u}r schwerwiegende Bereiche verantwortlich waren, dar\"{u}ber hinaus arbeiteten diese auch nur wenn man sie explizit auf bestimmte Aufgaben ansetzte. 
 Diese Probleme h\"{a}tte man l\"{o}sen k\"{o}nnen indem man mehrere f\"{u}r einzelne Bereiche Verantwortlich h\"{a}tte machen sollen oder einen Hauptverantwortlichen f\"{u}r das komplette Projekt erkl\"{a}ren k\"{o}nnen.
@@ -168,8 +186,9 @@ Die Allgemeine Dynamik des Teams war r\"{u}ckblickend positiv. Jeder hat seinen 
 
 \chapter{Anhang}
 
-
 \section{Quellen}
+
+Datum des Abrufes der Quellen : \today
 
 \subsection{Elektrotechnik}
 \begin{itemize}
